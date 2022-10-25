@@ -17,7 +17,7 @@
     <!-- Bootstrap Switch CSS -->
     <link rel="stylesheet" href="{{asset('assets/website')}}/css/components/bs-switches.css" type="text/css" />
 
-
+    <link rel="stylesheet" href="{{asset('assets/website')}}/css/custom.css" type="text/css" />
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
     <!-- Seo Demo Specific Stylesheet -->
@@ -27,10 +27,8 @@
     <!-- / -->
     @if(app()->getLocale() == 'ar')
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="{{asset('assets/website')}}/css/custom.css" type="text/css" />
 @endif
-<!-- Document Title
+    <!-- Document Title
     ============================================= -->
     <title>{{__(env('APP_NAME'))}} | @yield('title')</title>
 

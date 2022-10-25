@@ -31,11 +31,6 @@ Route::middleware(['language'])->group(function () {
     Route::get('/contact-form', [HomeController::class, 'contactForm'])->name('contact-form');
 
 
-    Route::resource('blogs', 'BlogController');
-    Route::resource('pages', 'PageController');
-    Route::resource('categories', 'CategoryController');
-    Route::resource('items', 'ItemController');
-
 });
 //
 //Route::get('/dashboard', function () {

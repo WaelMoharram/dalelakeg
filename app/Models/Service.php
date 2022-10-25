@@ -15,20 +15,7 @@ class Service extends Model
     use SoftDeletes,ColumnTranslation;
 
     protected $dates = ['deleted_at'];
-    protected $fillable = array( 'title_en', 'title_ar', 'content_ar','content_en');
+    protected $guarded = array('id');
 
-    public function getTitleAttribute(){
-        if(app()->getLocale() =='ar'){
-            return $this->title_ar;
-        }
 
-        return $this->title_en;
-    }
-    public function getContentAttribute(){
-        if(app()->getLocale() =='ar'){
-            return $this->content_ar;
-        }
-
-        return $this->content_en;
-    }
 }

@@ -1,234 +1,153 @@
-<footer id="footer" class="dark">
-{{--    <div class="container">--}}
+<!-- Footer
+    ============================================= -->
+<footer id="footer" class="border-0 bg-white">
+    <div class="container">
+        <!-- Footer Widgets
+        ============================================= -->
+        <div class="footer-widgets-wrap pb-5 clearfix">
 
-{{--        <!-- Footer Widgets--}}
-{{--        ============================================= -->--}}
-{{--        <div class="footer-widgets-wrap">--}}
+            <div class="row col-mb-50">
+                <div class="col-md-8">
 
-{{--            <div class="row col-mb-50">--}}
-{{--                <div class="col-lg-8">--}}
+                    <div class="widget clearfix">
 
-{{--                    <div class="row col-mb-50">--}}
-{{--                        <div class="col-md-4">--}}
+                        <img src="images/footer-widget-logo.png" alt="Footer Logo" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #DDD;">
 
-{{--                            <div class="widget clearfix">--}}
+                        <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template offers.</p>
 
-{{--                                <img src="{{asset('assets/website')}}/images/footer-widget-logo.png" alt="Image" class="footer-logo">--}}
+                        <div class="line line-sm"></div>
 
-{{--                                <p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> Design Standards.</p>--}}
+                        <div class="row">
+                            <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
 
-{{--                                <div style="background: url('{{asset('assets/website')}}/images/world-map.png') no-repeat center center; background-size: 100%;">--}}
-{{--                                    <address>--}}
-{{--                                        <strong>Headquarters:</strong><br>--}}
-{{--                                        795 Folsom Ave, Suite 600<br>--}}
-{{--                                        San Francisco, CA 94107<br>--}}
-{{--                                    </address>--}}
-{{--                                    <abbr title="Phone Number"><strong>Phone:</strong></abbr> (1) 8547 632521<br>--}}
-{{--                                    <abbr title="Fax"><strong>Fax:</strong></abbr> (1) 11 4752 1433<br>--}}
-{{--                                    <abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com--}}
-{{--                                </div>--}}
+                            <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                                <ul>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Events</a></li>
+                                    <li><a href="#">Forums</a></li>
+                                </ul>
+                            </div>
 
-{{--                            </div>--}}
+                            <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                                <ul>
+                                    <li><a href="#">Corporate</a></li>
+                                    <li><a href="#">Agency</a></li>
+                                    <li><a href="#">eCommerce</a></li>
+                                    <li><a href="#">Personal</a></li>
+                                    <li><a href="#">One Page</a></li>
+                                </ul>
+                            </div>
 
-{{--                        </div>--}}
+                            <div class="col-lg-3 col-6 bottommargin-sm widget_links">
+                                <ul>
+                                    <li><a href="#">Restaurant</a></li>
+                                    <li><a href="#">Wedding</a></li>
+                                    <li><a href="#">App Showcase</a></li>
+                                    <li><a href="#">Magazine</a></li>
+                                    <li><a href="#">Landing Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-{{--                        <div class="col-md-4">--}}
+                    </div>
 
-{{--                            <div class="widget widget_links clearfix">--}}
+                </div>
 
-{{--                                <h4>Blogroll</h4>--}}
+                <div class="col-md-4">
+                    <div class="widget clearfix">
 
-{{--                                <ul>--}}
-{{--                                    <li><a href="https://codex.wordpress.org/">Documentation</a></li>--}}
-{{--                                    <li><a href="https://wordpress.org/support/forum/requests-and-feedback">Feedback</a></li>--}}
-{{--                                    <li><a href="https://wordpress.org/extend/plugins/">Plugins</a></li>--}}
-{{--                                    <li><a href="https://wordpress.org/support/">Support Forums</a></li>--}}
-{{--                                    <li><a href="https://wordpress.org/extend/themes/">Themes</a></li>--}}
-{{--                                    <li><a href="https://wordpress.org/news/">Canvas Blog</a></li>--}}
-{{--                                    <li><a href="https://planet.wordpress.org/">Canvas Planet</a></li>--}}
-{{--                                </ul>--}}
+                        <div class="row clearfix">
+                            <div class="col-12">
+                                <div class="feature-box fbox-plain fbox-sm align-items-center">
+                                    <div class="fbox-icon">
+                                        <i class="icon-envelope text-dark"></i>
+                                    </div>
+                                    <div class="fbox-content">
+                                        <span class="text-muted">Call Us:</span><br>
+                                        <h3 class="nott ls0 fw-semibold">(10) 22 33445566</h3>
+                                    </div>
+                                </div>
+                            </div>
 
-{{--                            </div>--}}
+                            <div class="col-12 mt-4">
+                                <div class="feature-box fbox-plain fbox-sm align-items-center">
+                                    <div class="fbox-icon">
+                                        <i class="icon-phone3 text-dark"></i>
+                                    </div>
+                                    <div class="fbox-content">
+                                        <span class="text-muted">Email Us:</span><br>
+                                        <h3 class="nott ls0 fw-semibold">info@canvas.com</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-{{--                        </div>--}}
+                    </div>
 
-{{--                        <div class="col-md-4">--}}
+                    <div class="widget subscribe-widget clearfix">
+                        <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>
+                        <div class="widget-subscribe-form-result"></div>
+                        <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+                            <div class="input-group mx-auto">
+                                <div class="input-group-text bg-transparent"><i class="icon-email2"></i></div>
+                                <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                <button class="btn btn-success button button-color nott ls0 m-0" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
 
-{{--                            <div class="widget clearfix">--}}
-{{--                                <h4>Recent Posts</h4>--}}
+                    <div class="widget">
 
-{{--                                <div class="posts-sm row col-mb-30" id="post-list-footer">--}}
-{{--                                    <div class="entry col-12">--}}
-{{--                                        <div class="grid-inner row">--}}
-{{--                                            <div class="col">--}}
-{{--                                                <div class="entry-title">--}}
-{{--                                                    <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="entry-meta">--}}
-{{--                                                    <ul>--}}
-{{--                                                        <li>10th July 2021</li>--}}
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                        <div class="row col-mb-30">
+                            <div class="col-lg-6 col-md-12 col-6">
+                                <a href="https://facebook.com/semicolonweb" target="_blank" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">
+                                    <i class="icon-facebook"></i>
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a href="https://facebook.com/semicolonweb" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-6">
+                                <a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">
+                                    <i class="icon-rss"></i>
+                                    <i class="icon-rss"></i>
+                                </a>
+                                <a href="https://themeforest.net/user/SemiColonWeb/follow" target="_blank" class="text-dark"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>
+                            </div>
+                        </div>
 
-{{--                                    <div class="entry col-12">--}}
-{{--                                        <div class="grid-inner row">--}}
-{{--                                            <div class="col">--}}
-{{--                                                <div class="entry-title">--}}
-{{--                                                    <h4><a href="#">Elit Assumenda vel amet dolorum quasi</a></h4>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="entry-meta">--}}
-{{--                                                    <ul>--}}
-{{--                                                        <li>10th July 2021</li>--}}
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                    </div>
+                </div>
+            </div>
 
-{{--                                    <div class="entry col-12">--}}
-{{--                                        <div class="grid-inner row">--}}
-{{--                                            <div class="col">--}}
-{{--                                                <div class="entry-title">--}}
-{{--                                                    <h4><a href="#">Debitis nihil placeat, illum est nisi</a></h4>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="entry-meta">--}}
-{{--                                                    <ul>--}}
-{{--                                                        <li>10th July 2021</li>--}}
-{{--                                                    </ul>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-{{--                </div>--}}
-
-{{--                <div class="col-lg-4">--}}
-
-{{--                    <div class="row col-mb-50">--}}
-{{--                        <div class="col-md-4 col-lg-12">--}}
-{{--                            <div class="widget clearfix" style="margin-bottom: -20px;">--}}
-
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-lg-6 bottommargin-sm">--}}
-{{--                                        <div class="counter counter-small"><span data-from="50" data-to="15065421" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>--}}
-{{--                                        <h5 class="mb-0">Total Downloads</h5>--}}
-{{--                                    </div>--}}
-
-{{--                                    <div class="col-lg-6 bottommargin-sm">--}}
-{{--                                        <div class="counter counter-small"><span data-from="100" data-to="18465" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>--}}
-{{--                                        <h5 class="mb-0">Clients</h5>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="col-md-5 col-lg-12">--}}
-{{--                            <div class="widget subscribe-widget clearfix">--}}
-{{--                                <h5><strong>Subscribe</strong> to Our Newsletter to get Important News, Amazing Offers &amp; Inside Scoops:</h5>--}}
-{{--                                <div class="widget-subscribe-form-result"></div>--}}
-{{--                                <form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">--}}
-{{--                                    <div class="input-group mx-auto">--}}
-{{--                                        <div class="input-group-text"><i class="icon-email2"></i></div>--}}
-{{--                                        <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">--}}
-{{--                                        <button class="btn btn-success" type="submit">Subscribe</button>--}}
-{{--                                    </div>--}}
-{{--                                </form>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="col-md-3 col-lg-12">--}}
-{{--                            <div class="widget clearfix" style="margin-bottom: -20px;">--}}
-
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-6 col-md-12 col-lg-6 clearfix bottommargin-sm">--}}
-{{--                                        <a href="#" class="social-icon si-dark si-colored si-facebook mb-0" style="margin-right: 10px;">--}}
-{{--                                            <i class="icon-facebook"></i>--}}
-{{--                                            <i class="icon-facebook"></i>--}}
-{{--                                        </a>--}}
-{{--                                        <a href="#"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-6 col-md-12 col-lg-6 clearfix">--}}
-{{--                                        <a href="#" class="social-icon si-dark si-colored si-rss mb-0" style="margin-right: 10px;">--}}
-{{--                                            <i class="icon-rss"></i>--}}
-{{--                                            <i class="icon-rss"></i>--}}
-{{--                                        </a>--}}
-{{--                                        <a href="#"><small style="display: block; margin-top: 3px;"><strong>Subscribe</strong><br>to RSS Feeds</small></a>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                    </div>--}}
-
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--        </div><!-- .footer-widgets-wrap end -->--}}
-
-{{--    </div>--}}
+        </div><!-- .footer-widgets-wrap end -->
+    </div>
 
     <!-- Copyrights
     ============================================= -->
-    <div id="copyrights">
-        <div class="container">
+    <div id="copyrights" style="background: url('demos/seo/images/hero/footer.svg') no-repeat top center; background-size: cover; padding-top: 70px;">
+        <div class="container clearfix">
 
-            <div class="row col-mb-30">
-
-                <div class="col-md-6 text-center text-md-start">
-
-                    {{__('Develop by')}} <a href="http://www.egmarkter.com/">EG Markter</a>  {{__('Copyrights')}} &copy; {{date('Y')}} {{__('All Rights')}}<br>
-                    <div class="copyright-links"><a
-                            href="@if(app()->getLocale() == 'ar'){{route('blogs.show',4)}}
-                            @else
-                            {{route('blogs.show',3)}}
-                            @endif
-                                "
-                        >{{__('Terms of Use')}}</a> / <a href="@if(app()->getLocale() == 'ar'){{route('blogs.show',2)}}
-                        @else
-                        {{route('blogs.show',1)}}
-                        @endif">{{__('Privacy Policy')}}</a></div>
+            <div class="row justify-content-between col-mb-30">
+                <div class="col-12 col-lg-auto text-center text-lg-start">
+                    Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
+                    <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
                 </div>
 
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="d-flex justify-content-center justify-content-md-end">
-                        <a href="{{option('facebook')}}" class="social-icon si-small si-borderless si-facebook">
-                            <i class="icon-facebook"></i>
-                            <i class="icon-facebook"></i>
-                        </a>
-
-                        <a href="{{option('twitter')}}" class="social-icon si-small si-borderless si-twitter">
-                            <i class="icon-twitter"></i>
-                            <i class="icon-twitter"></i>
-                        </a>
-
-                        <a href="{{option('instagram')}}" class="social-icon si-small si-borderless si-instagram">
-                            <i class="icon-instagram"></i>
-                            <i class="icon-instagram"></i>
-                        </a>
-
-
-
-                        <a href="{{option('facebook')}}" class="social-icon si-small si-borderless si-youtube">
-                            <i class="icon-youtube"></i>
-                            <i class="icon-yourube"></i>
-                        </a>
+                <div class="col-12 col-lg-auto text-center text-lg-end">
+                    <div class="copyrights-menu copyright-links clearfix">
+                        <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
                     </div>
-
-                    <div class="clear"></div>
-
-                    <i class="icon-envelope2"></i>{{option('main email')}}  <span class="middot">&middot;</span> <i class="icon-headphones"></i>{{option('main phone')}}  <span class="middot">&middot;</span> <i class="icon-address"></i> {{option('main address')}}
                 </div>
-
             </div>
 
         </div>

@@ -39,11 +39,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $sliders = Slider::all();
 
-        $blogs = Blog::where('lang',app()->getLocale())->where('type','post')->orderBy('id', 'desc')->take(3)->get();
 
-        return view('website.home',compact('sliders','blogs'));
+        return view('website.home');
     }
 
     public function contactUs(Request $request){

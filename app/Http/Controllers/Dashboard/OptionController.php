@@ -26,7 +26,7 @@ class OptionController extends Controller
      */
     public function index()
     {
-//        option(['instagram' => 'https://www.instagram.com/mrshealthcare1']);
+
         $options = Option::all();
 
         return view('dashboard.system-options.index',compact('options'));

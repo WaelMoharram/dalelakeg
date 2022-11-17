@@ -5,7 +5,7 @@
 /* Root Settings
 -----------------------------------------------------------------*/
 :root {
-	--themecolor:  #fE9603;
+	--themecolor:  #2e3192;
 	--basefontsize: 16px;
 	--fontfamily: 'Poppins', sans-serif;
 	--headerboxshadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
@@ -81,7 +81,7 @@ div.menu-link { cursor: default; }
 	height: 70px;
 	line-height: 71px;
 	font-size: 24px;
-	background: linear-gradient(60deg, #fE9603, #ff8e01, #ed9931, #f37055);
+	background: linear-gradient(60deg, #2e3192, #ff8e01, #ed9931, #f37055);
 	color: #FFF;
 	text-align: center;
 	border-radius: 50%;
@@ -113,7 +113,7 @@ div.menu-link { cursor: default; }
 input.switch-toggle-round + label::before,
 input.switch-toggle-round + label {
 	border-radius: 4px;
-	background-color: var(--themecolor, #fE9603);
+	background-color: var(--themecolor, #2e3192);
 }
 
 .price-discount {
@@ -214,8 +214,8 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 }
 
 .badge.badge-default {
-	border: 1px solid var(--themecolor, #fE9603);
-	color: var(--themecolor, #fE9603);
+	border: 1px solid var(--themecolor, #2e3192);
+	color: var(--themecolor, #2e3192);
 }
 
 /* Testimonials Carousel
@@ -389,7 +389,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
     bottom: 0;
     width: 5px;
     border-radius: 0 0 6px 6px;
-    background-image: linear-gradient(to bottom, #FFE640 0%, #fE9603 100%);
+    background-image: linear-gradient(to bottom, #FFE640 0%, #2e3192 100%);
 }
 
 .story-timeline .story-timeline-dots {
@@ -401,7 +401,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
     width: 26px;
     height: 36px;
     margin-left: -13px;
-    background-image: linear-gradient(#FFE640 0%, #fE9603 100%);
+    background-image: linear-gradient(#FFE640 0%, #2e3192 100%);
     border: 6px solid #FFF;
     border-radius: 50%;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);

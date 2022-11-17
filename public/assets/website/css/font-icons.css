@@ -137,7 +137,7 @@
 }
 
 .iconlist > li [class^="icon-"]:first-child {
-	color: #81bcdc;
+	color: #8ec83f;
 	color: var(--themecolor);
 }
 

@@ -32,8 +32,10 @@
 
         <link rel="stylesheet" href="{{asset('assets/website')}}/css/custom.css" type="text/css" />
 @endif
-<!-- Document Title
-    ============================================= -->
+
+
+    <!-- Document Title
+        ============================================= -->
     <title>{{__(env('APP_NAME'))}} | @yield('title')</title>
 
 

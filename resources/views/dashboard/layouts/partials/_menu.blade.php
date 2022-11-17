@@ -36,17 +36,23 @@
                 </a>
             </li>
 
-            <li class=" nav-item @if(Request::is('dashboard/categories')) active open  @endif">
-                <a href="{{route('dashboard.categories.index')}}">
-                    <i class="feather icon-folder"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Categories')}}</span>
+            <li class=" nav-item @if(Request::is('dashboard/faqs')) active open  @endif">
+                <a href="{{route('dashboard.faqs.index')}}">
+                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('FAQs')}}</span>
                 </a>
             </li>
 
-            <li class=" nav-item @if(Request::is('dashboard/items')) active open  @endif">
-                <a href="{{route('dashboard.items.index')}}">
-                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Items')}}</span>
-                </a>
-            </li>
+{{--            <li class=" nav-item @if(Request::is('dashboard/categories')) active open  @endif">--}}
+{{--                <a href="{{route('dashboard.categories.index')}}">--}}
+{{--                    <i class="feather icon-folder"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Categories')}}</span>--}}
+{{--                </a>--}}
+{{--            </li>--}}
+
+{{--            <li class=" nav-item @if(Request::is('dashboard/items')) active open  @endif">--}}
+{{--                <a href="{{route('dashboard.items.index')}}">--}}
+{{--                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Items')}}</span>--}}
+{{--                </a>--}}
+{{--            </li>--}}
 
 
             <li class=" nav-item @if(Request::is('dashboard/blogs')) active open  @endif">
@@ -62,17 +68,17 @@
             </li>
 
 
-            <li class=" nav-item @if(Request::is('dashboard/about-us/edit')) active open  @endif">
-                <a href="{{route('dashboard.about-us.edit',1)}}">
-                    <i class="feather icon-map"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('About us page')}}</span>
-                </a>
-            </li>
+{{--            <li class=" nav-item @if(Request::is('dashboard/about-us/edit')) active open  @endif">--}}
+{{--                <a href="{{route('dashboard.about-us.edit',1)}}">--}}
+{{--                    <i class="feather icon-map"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('About us page')}}</span>--}}
+{{--                </a>--}}
+{{--            </li>--}}
 
-            <li class=" nav-item @if(Request::is('dashboard/contact-us')) active open  @endif">
-                <a href="{{route('dashboard.contact-us.index')}}">
-                    <i class="feather icon-phone-call"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Contact us Sections')}}</span>
-                </a>
-            </li>
+{{--            <li class=" nav-item @if(Request::is('dashboard/contact-us')) active open  @endif">--}}
+{{--                <a href="{{route('dashboard.contact-us.index')}}">--}}
+{{--                    <i class="feather icon-phone-call"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Contact us Sections')}}</span>--}}
+{{--                </a>--}}
+{{--            </li>--}}
 
             <li class=" nav-item @if(Request::is('dashboard/system-options')) active open  @endif">
                 <a href="{{route('dashboard.system-options.index')}}">

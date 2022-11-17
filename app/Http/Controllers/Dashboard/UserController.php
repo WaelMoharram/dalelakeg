@@ -54,6 +54,8 @@ class UserController extends Controller
      */
     public function store(UserRequest $request)
     {
+
+        $requests = $request->all();
         if ($request->hasFile('image')) {
             $requests['image'] = saveImage($request->image, 'images');
             $request->files->remove('image');

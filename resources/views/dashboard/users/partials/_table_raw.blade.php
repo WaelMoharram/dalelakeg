@@ -29,24 +29,7 @@
                         @endcomponent
             </div>
 
-                    <div class="btn-group" role="group">
-                        @if($user->status == 1)
-                            @component('dashboard.layouts.partials.buttons._suspend',[
-                                        'id'=>$user->id,
-                                        'route' => route('dashboard.users.suspend',$user->id) ,
-                                        'tooltip' => __('De-active'),
-                                         ])
-                            @endcomponent
-                        @else
-                            @component('dashboard.layouts.partials.buttons._activate',[
-                                'id'=>$user->id,
-                                'route' => route('dashboard.users.suspend',$user->id) ,
-                                'tooltip' => __('Active'),
-                                 ])
-                            @endcomponent
-                        @endif
-                    </div>
-                </div>
+
         </div>
 
 

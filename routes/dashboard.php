@@ -35,6 +35,10 @@ Route::name('dashboard.')->middleware(['language', 'auth:web'])->prefix('dashboa
 
     Route::resource('contact-us', 'ContactUsController');
 
+    Route::resource('faqs', 'FAQsController');
+
+
+
     Route::resource('system-options', 'OptionController')->only([
         'index', 'edit','update'
     ]);

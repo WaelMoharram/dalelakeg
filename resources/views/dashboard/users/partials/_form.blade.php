@@ -1,4 +1,6 @@
-
+@if($errors->any())
+    {!! implode('', $errors->all('<div>:message</div>')) !!}
+@endif
 <div class="form-group py-1 col-md-6">
     <label for="formInputRole"> {{__('Full name')}}</label>
     {!! Form::text('name',null,['class'=>'form-control col','placeholder'=>__("Full name"),isset($readOnly)?$readOnly:null,disable_on_show()]) !!}

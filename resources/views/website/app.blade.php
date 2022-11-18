@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-textdirection="{!! app()->getLocale() == 'ar'?'rtl':'ltr' !!}" dir="{!! app()->getLocale() == 'ar'?'rtl':'ltr' !!}">
+<html  dir="ltr">
 
 @include('website.layouts.head')
 
@@ -22,6 +22,7 @@
 <div id="gotoTop" class="icon-angle-up"></div>
 @include('website.layouts.scripts')
 
+@stack('scripts')
 
 </body>
 </html>

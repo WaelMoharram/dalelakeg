@@ -7,7 +7,7 @@
 <!-- Slider
     ============================================= -->
 
-<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 ">
+<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 {{--include-header--}}">
     <div class="owl-carousel owl-carousel1 owl-theme">
         @foreach($sliders as $slider)
             <div class="item"><img src="{{$slider->slider_image}}"></div>
@@ -123,101 +123,7 @@
             </div>
         </div>
 
-        <!-- Pricing
-        ============================================= -->
-        <div class="section m-0" style="background: url({{asset('assets/website')}}'/demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-lg-4 mt-4">
-                        <div class="heading-block border-bottom-0 bottommargin-sm">
-                            <div class="badge rounded-pill badge-default">Pricing Table</div>
-                            <h3 class="nott ls0">No Hidden Charges. <br>Choose Your Best Plan.</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
-                        <div class="pricing-tenure-switcher d-flex align-items-center mb-4 position-relative" data-container="#pricing-switch">
-                            <span class="pts-left fw-bold text-muted">Monthly</span>
-                            <div class="pts-switcher mx-3">
-                                <div class="switch">
-                                    <input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
-                                    <label for="switch-toggle-pricing-tenure" class="mb-0"></label>
-                                </div>
-                            </div>
-                            <span class="pts-right fw-bold text-muted">Yearly</span>
-                            <div class="price-discount"></div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-8">
-                        <div id="section-pricing" class="page-section p-0 m-0">
-
-                            <div id="pricing-switch" class="pricing row align-items-end g-0 col-mb-50 mb-4">
-
-                                <div class="col-md-6">
-
-                                    <div class="pricing-box">
-                                        <div class="pricing-title">
-                                            <img class="mb-2 bg-transparent rounded-0" src="{{asset('assets/website')}}/demos/seo/images/icons/man.svg" alt="Pricing Icon" width="50">
-                                            <h3>Single User Plan</h3>
-                                            <span>Most Popular</span>
-                                        </div>
-                                        <div class="pricing-price">
-                                            <div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5<span class="price-tenure">Per Month</span></div>
-                                            <div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>
-                                        </div>
-                                        <div class="pricing-features border-0 bg-transparent">
-                                            <ul>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>Limited</strong> Support</li>
-                                                <li class="pts-switch-content-left text-black-50"><i class="icon-minus-circle me-2"></i><del style="opacity: .5"><strong>1</strong> Free Optimization</del></li>
-                                                <li class="pts-switch-content-right"><i class="icon-check-circle color me-2"></i><strong>1</strong> Free Optimization</li>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>100+</strong> Pages</li>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>Single</strong> User License</li>
-                                                <li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-action">
-                                            <div class="pts-switch-content-left"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
-                                            <div class="pts-switch-content-right"><a href="#" class="button button-large button-rounded w-100 text-capitalize m-0 ls0">Get Started</a></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-md-6">
-
-                                    <div class="pricing-box">
-                                        <div class="pricing-title">
-                                            <img class="mb-2 bg-transparent rounded-0" src="{{asset('assets/website')}}/demos/seo/images/icons/group.svg" alt="Pricing Icon" width="60">
-                                            <h3>Multiple User Plan</h3>
-                                        </div>
-                                        <div class="pricing-price">
-                                            <div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>12<span class="price-tenure">Per Month</span></div>
-                                            <div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>115<span class="price-tenure">Per Year</span></div>
-                                        </div>
-                                        <div class="pricing-features border-0 bg-transparent">
-                                            <ul>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>24*7</strong> Support</li>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>10</strong> Free Optimization</li>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>1000+</strong> Pages</li>
-                                                <li><i class="icon-check-circle color me-2"></i><strong>Unlimited</strong> User License</li>
-                                                <li><i class="icon-check-circle color me-2"></i>Phone &amp; Email Support</li>
-                                            </ul>
-                                        </div>
-                                        <div class="pricing-action">
-                                            <div class="pts-switch-content-left"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
-                                            <div class="pts-switch-content-right"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border w-100 nott m-0 ls0">Get Started</a></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
         <!-- Form Section
         ============================================= -->
@@ -225,7 +131,7 @@
             <div class="container">
                 <div class="row justify-content-between align-items-center">
 
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <div class="heading-block border-bottom-0 bottommargin-sm">
                             <div class="badge rounded-pill badge-default">Careers</div>
                             <h3 class="nott ls0">Get your free Quote today</h3>
@@ -233,7 +139,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-4">
+                    <div class="col-lg-6 col-md-6">
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <h4 class="mb-3">Apply Now</h4>
@@ -266,9 +172,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mt-5 mt-md-0 center">
-                        <a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" data-lightbox="iframe" class="play-icon shadow"><i class="icon-play"></i></a>
-                    </div>
+
 
                 </div>
 
@@ -403,47 +307,7 @@
             </div>
         </div>
 
-        <!-- Features
-        ============================================= -->
-        <div class="container clearfix py-5">
-            <div class="row">
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/icons/research.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">1. Planning &amp; Research</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/icons/optimizing.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">2. Optimizing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mt-5">
-                    <div class="feature-box fbox-center border-0">
-                        <div class="fbox-icon">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/icons/result.svg" alt="Feature Icon" class="bg-transparent rounded-0"></a>
-                        </div>
-                        <div class="fbox-content">
-                            <h3 class="nott ls0">3. Result</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Testimonials
         ============================================= -->
@@ -603,17 +467,7 @@
 
         </div>
 
-        <!-- Promo/Contact
-        ============================================= -->
-        <div class="section mt-5 footer-stick promo-section bg-transparent" style="padding: 100px 0; overflow: visible">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center">
-                    <h5 class="text-uppercase ls1 mb-1">Grab your Free Trail and Explore the Options</h5>
-                    <h2 class="nott ls0">Try Keyword Search 30 Days Free With Canvas<span>SEO</span></h2>
-                    <a href="demo-seo-contact.html" class="button button-large button-rounded nott ms-0 ls0 mt-4">Contact Us Now</a>
-                </div>
-            </div>
-        </div>
+
     </div>
 </section><!-- #content end -->
 

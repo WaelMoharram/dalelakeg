@@ -13,13 +13,13 @@
                         <li class="top-links-item"><a href="demo-seo.html">Home</a></li>
                         <li class="top-links-item"><a href="demo-seo-faqs.html">FAQs</a></li>
                         <li class="top-links-item"><a href="demo-seo-contact.html">Contact</a></li>
-                        <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/eng.png" alt="Lang">Eng</a>
-                            <ul class="top-links-sub-menu">
-                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/fre.png" alt="Lang">French</a></li>
-                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/ara.png" alt="Lang">Arabic</a></li>
-                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/tha.png" alt="Lang">Thai</a></li>
-                            </ul>
-                        </li>
+{{--                        <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/eng.png" alt="Lang">Eng</a>--}}
+{{--                            <ul class="top-links-sub-menu">--}}
+{{--                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/fre.png" alt="Lang">French</a></li>--}}
+{{--                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/ara.png" alt="Lang">Arabic</a></li>--}}
+{{--                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/tha.png" alt="Lang">Thai</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
                     </ul>
                 </div><!-- .top-links end -->
 

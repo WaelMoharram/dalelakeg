@@ -56,7 +56,7 @@ class OptionController extends Controller
     {
         option([request()->key => request()->value]);
         toast(__('Edited successfully'),'success');
-        return redirect()->back();
+        //return redirect()->back();
         return redirect(route('dashboard.system-options.index'));
     }
 

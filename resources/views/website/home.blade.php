@@ -7,7 +7,7 @@
 <!-- Slider
     ============================================= -->
 
-<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 include-header">
+<section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 ">
     <div class="owl-carousel owl-carousel1 owl-theme">
         @foreach($sliders as $slider)
             <div class="item"><img src="{{$slider->slider_image}}"></div>

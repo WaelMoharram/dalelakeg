@@ -10,13 +10,13 @@
 
             <div class="row justify-content-between col-mb-30">
                 <div class="col-12 col-lg-auto text-center text-lg-start">
-                    Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.<br>
-                    <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                    جميع الحقوق محفوظة ايجى ماركتير   {{date('Y')}}  <br>
+                    <div class="copyright-links"><a href="#">شروط الاستخدام</a> / <a href="#">سياسة الخصوصية</a></div>
                 </div>
 
                 <div class="col-12 col-lg-auto text-center text-lg-end">
                     <div class="copyrights-menu copyright-links clearfix">
-                        <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">FAQs</a>/<a href="#">Contact</a>
+                        <a href="#">الرئيسية</a>/<a href="#">عن ايجى ماركتير</a>/<a href="#">شركاء النجاح</a>/<a href="#">اسئلة واجوية</a>/<a href="#">تواصل معنا</a>
                     </div>
                 </div>
             </div>

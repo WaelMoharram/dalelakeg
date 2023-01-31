@@ -38,7 +38,7 @@
 <link rel="stylesheet" type="text/css" href="{{asset('assets/dashboard/resources')}}/app-assets/vendors/css/tables/datatable/datatables.min.css">
 <link rel="stylesheet" type="text/css" href="{{asset('assets/dashboard/resources')}}/app-assets/vendors/css/pickers/pickadate/pickadate.css">
 
-<link rel="stylesheet" type="text/css" href="{{asset('assets/dashboard/resources')}}/app-assets/vendors/css/forms/select/select2.min.css">
+
 
 <!-- END: Vendor CSS-->
 
@@ -61,5 +61,5 @@
 
 <!-- END: Custom CSS-->
 @endif
-
+<link rel="stylesheet" type="text/css" href="{{asset('assets/dashboard/resources')}}/app-assets/vendors/css/forms/select/select2.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>

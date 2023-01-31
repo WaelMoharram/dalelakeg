@@ -24,23 +24,37 @@
 {{--    {{input_error($errors,'question_icon')}}--}}
 {{--</div>--}}
 
-<div class="form-group py-1 col-md-12">
-    <label for="question"> {{__('Question')}}</label>
-    {!! Form::text('question',null,['id'=>'question','class'=>'form-control col','placeholder'=>__("Question")]) !!}
-    {{input_error($errors,'question')}}
+<div class="form-group py-1 col-md-6">
+    <label for="question-ar"> {{__('Question in Arabic')}}</label>
+    {!! Form::text('question.ar',null,['id'=>'question-ar','class'=>'form-control col','placeholder'=>__("Question in Arabic")]) !!}
+    {{input_error($errors,'question.ar')}}
+</div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="question-en"> {{__('Question in English')}}</label>
+    {!! Form::text('question.en',null,['id'=>'question-en','class'=>'form-control col','placeholder'=>__("Question in English")]) !!}
+    {{input_error($errors,'question.en')}}
 </div>
 
 
-<div class="form-group py-1 col-md-12">
-    <label for="answer"> {{__('Answer')}} </label>
-    {!! Form::textarea('answer',null,['id'=>'answer','class'=>'form-control col']) !!}
-    {{input_error($errors,'answer')}}
+<div class="form-group py-1 col-md-6">
+    <label for="answer-ar"> {{__('Answer in Arabic')}} </label>
+    {!! Form::textarea('answer.ar',null,['id'=>'answer-ar','class'=>'form-control col']) !!}
+    {{input_error($errors,'answer.ar')}}
+</div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="answer-en"> {{__('Answer in English')}} </label>
+    {!! Form::textarea('answer.en',null,['id'=>'answer-en','class'=>'form-control col']) !!}
+    {{input_error($errors,'answer.en')}}
 </div>
 
 @section('footer')
     <script>
-        CKEDITOR.replace('answer');
+        CKEDITOR.replace( 'answer[ar]' );
+        CKEDITOR.replace( 'answer[en]' );
     </script>
+
     <script>
         $(function () {
             function formatText(icon) {

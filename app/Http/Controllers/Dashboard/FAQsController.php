@@ -55,7 +55,7 @@ class FAQsController extends Controller
     public function store(FAQRequest $request)
     {
 
-
+        return $request->all();
         FAQs::create($request->all());
 
         toast(__('Added successfully'),'success');

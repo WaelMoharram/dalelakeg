@@ -26,9 +26,16 @@ Route::middleware(['language'])->group(function () {
         return back();
     })->name('lang-en');
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
+    Route::get('/blog/{id}', [HomeController::class, 'blog'])->name('blog');
+
     Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');
     Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us');
     Route::get('/contact-form', [HomeController::class, 'contactForm'])->name('contact-form');
+
+    Route::get('/services', [HomeController::class, 'services'])->name('services');
+
+    Route::get('/service/{id}', [HomeController::class, 'service'])->name('service');
 
 
 });

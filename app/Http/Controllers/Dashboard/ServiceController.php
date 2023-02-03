@@ -61,7 +61,6 @@ class ServiceController extends Controller
         }
 
 
-        $requests['user_id']= Auth::id();
         $service = Service::create($requests);
 
         toast(__('Added successfully'),'success');

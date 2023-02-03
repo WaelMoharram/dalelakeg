@@ -28,7 +28,7 @@ class BlogController extends Controller
     public function index(){
         $blogs = Blog::where('lang',app()->getLocale())->where('type','blog')->orderBy('id', 'desc')->paginate(9);
 
-        return view('website.blogs.index',compact('blogs'));
+        return view('website.blogs',compact('blogs'));
     }
     /**
      * Show the application dashboard.
@@ -38,7 +38,7 @@ class BlogController extends Controller
     public function show($id)
     {
          $blog= Blog::findOrFail($id);
-        return view('website.blogs.show',compact('blog'));
+        return view('website.blog',compact('blog'));
     }
 
 

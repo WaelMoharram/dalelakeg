@@ -10,9 +10,9 @@
                 ============================================= -->
                 <div class="top-links">
                     <ul class="top-links-container">
-                        <li class="top-links-item"><a href="demo-seo.html">Home</a></li>
-                        <li class="top-links-item"><a href="demo-seo-faqs.html">FAQs</a></li>
-                        <li class="top-links-item"><a href="demo-seo-contact.html">Contact</a></li>
+                        <li class="top-links-item"><a href="{{route('home')}}">{{__('Home')}}</a></li>
+                        <li class="top-links-item"><a href="{{__('faqs')}}">{{__('FAQs')}}</a></li>
+                        <li class="top-links-item"><a href="{{route('contact-us')}}">{{__('Contact')}}</a></li>
 {{--                        <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/eng.png" alt="Lang">Eng</a>--}}
 {{--                            <ul class="top-links-sub-menu">--}}
 {{--                                <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/fre.png" alt="Lang">French</a></li>--}}

@@ -9,6 +9,8 @@ use App\Models\ContactUs;
 use App\Models\AboutUs;
 use App\Models\Contact;
 
+use App\Models\FAQs;
+use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Task;
 use App\Models\User;
@@ -49,12 +51,8 @@ class HomeController extends Controller
     }
 
     public function contactUs(Request $request){
-        $contactsUs = ContactUs::all();
-        $contactUs = ContactUs::find($request->id);
-        if(!$contactUs){
-            $contactUs = ContactUs::first();
-        }
-        return view('website.contact-us',compact('contactsUs','contactUs'));
+
+        return view('website.contact-us');
     }
     public function contactForm(Request $request){
         Contact::create($request->all());
@@ -65,6 +63,28 @@ class HomeController extends Controller
     public function AboutUs(Request $request){
         $aboutUs = AboutUs::first();
         return view('website.about-us',compact('aboutUs'));
+    }
+
+    public function faqs(){
+        $faqs = FAQs::all();
+        return view('website.faqs',compact('faqs'));
+
+    }
+
+    public function blog($id){
+        $blog = Blog::find($id);
+        return view('website.blog',compact('blog'));
+
+    }
+
+    public function services(){
+        $services = Service::all();
+        return view('website.services',compact('services'));
+    }
+
+    public function service($id){
+        $service = Service::find($id);
+        return view('website.service',compact('service'));
     }
 
 

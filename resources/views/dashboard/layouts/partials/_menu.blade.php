@@ -48,11 +48,11 @@
 {{--                </a>--}}
 {{--            </li>--}}
 
-{{--            <li class=" nav-item @if(Request::is('dashboard/items')) active open  @endif">--}}
-{{--                <a href="{{route('dashboard.items.index')}}">--}}
-{{--                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Items')}}</span>--}}
-{{--                </a>--}}
-{{--            </li>--}}
+            <li class=" nav-item @if(Request::is('dashboard/services')) active open  @endif">
+                <a href="{{route('dashboard.services.index')}}">
+                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Services')}}</span>
+                </a>
+            </li>
 
 
             <li class=" nav-item @if(Request::is('dashboard/blogs')) active open  @endif">

@@ -2,7 +2,6 @@
     <td>{!! $loop->index +1 !!}</td>
     <td><img src="{!! url('/').'/'.$page->image !!}" style="width: 100px; height: 100px;"></td>
     <td>{!! $page->title !!}</td>
-    <td>{!! $page->content !!}</td>
     <td>{!! $page->lang == 'ar' ? __('Arabic') : __('English') !!}</td>
     <td>
         <div class="btn-group" role="group" aria-label="Vertical button group">
@@ -14,7 +13,7 @@
                          ])
                 @endcomponent
             </div>
-            @if($page->id >4)
+            @if($page->id >6)
             <div class="btn-group" role="group">
                 @component('dashboard.layouts.partials.buttons._delete_button',[
                             'id'=>$page->id,

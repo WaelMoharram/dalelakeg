@@ -24,8 +24,8 @@ class ServiceRequest extends FormRequest
     public function rules()
     {
         return [
-//            'name.*' => 'required|string',
-//            'image' =>'required_without:_method|image',
+            'name.*' => 'required|string',
+            'image' =>'required_without:_method|image',
 
         ];
     }

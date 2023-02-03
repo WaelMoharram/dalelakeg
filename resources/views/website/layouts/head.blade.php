@@ -23,7 +23,7 @@
     <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
     <!-- Seo Demo Specific Stylesheet -->
-    <link rel="stylesheet" href="{{asset('assets/website')}}/css/colors.php?color=FE9603" type="text/css" /> <!-- Theme Color -->
+    <link rel="stylesheet" href="{{asset('assets/website')}}/css/colors.php?color=8ec83f" type="text/css" /> <!-- Theme Color -->
     <link rel="stylesheet" href="{{asset('assets/website')}}/demos/seo/css/fonts.css" type="text/css" />
     <link rel="stylesheet" href="{{asset('assets/website')}}/demos/seo/seo.css" type="text/css" />
     <!-- / -->

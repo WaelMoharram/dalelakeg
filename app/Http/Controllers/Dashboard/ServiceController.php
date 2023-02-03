@@ -101,7 +101,7 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update($id, ServiceRequest $request)
+    public function update($id,ServiceRequest $request)
     {
 
         $requests=$request->all();

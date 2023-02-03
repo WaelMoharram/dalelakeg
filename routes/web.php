@@ -27,6 +27,7 @@ Route::middleware(['language'])->group(function () {
     })->name('lang-en');
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
+    Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
     Route::get('/blog/{id}', [HomeController::class, 'blog'])->name('blog');
 
     Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');

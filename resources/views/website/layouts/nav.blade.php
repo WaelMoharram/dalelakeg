@@ -23,7 +23,7 @@
                         <a href="{{route('service',$service->id)}}" class="mega-menu-column sub-menu-container col-lg-4 border-bottom h-bg-light py-4">
                             <div class="feature-box">
                                 <div class="fbox-icon mb-2">
-                                    <img src="{{$service->image}}" alt="Feature Icon" class="bg-transparent rounded-0">
+                                    <img src="{{url($service->image)}}" alt="Feature Icon" class="bg-transparent rounded-0">
                                 </div>
                                 <div class="fbox-content">
                                     <h3 class="nott ls0">{{$service->name}}</h3>
@@ -40,7 +40,7 @@
             </div>
         </li>
         <li class="menu-item @if(Request::is('faqs')) current  @endif"><a class="menu-link" href="{{route('faqs')}}"><div>{{__('FAQs')}}</div></a></li>
-        <li class="menu-item"><a class="menu-link" href="demo-seo-contact.html"><div>Contact</div></a></li>
+        <li class="menu-item"><a class="menu-link" target="_blank" href="https://wa.me/{{option('whatsapp')}}"><div>{{__('Contact')}}</div></a></li>
     </ul>
 
 </nav><!-- #primary-menu end -->

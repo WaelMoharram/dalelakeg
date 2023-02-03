@@ -93,59 +93,6 @@
 
 
 
-        <!-- Form Section
-        ============================================= -->
-        <div class="section m-0" style="background: url({{asset('assets/website')}}'/demos/seo/images/sections/1.jpg') no-repeat center center; background-size: cover; padding: 100px 0;">
-            <div class="container">
-                <div class="row justify-content-between align-items-center">
-
-                    <div class="col-md-6">
-                        <div class="heading-block border-bottom-0 bottommargin-sm">
-                            <div class="badge rounded-pill badge-default">Careers</div>
-                            <h3 class="nott ls0">Get your free Quote today</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6">
-                        <div class="card shadow-sm">
-                            <div class="card-body">
-                                <h4 class="mb-3">Apply Now</h4>
-                                <div class="form-widget">
-                                    <div class="form-result"></div>
-                                    <form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
-                                        <div class="col-12 form-group mb-3">
-                                            <label for="template-contactform-name">Name:*</label>
-                                            <input type="text" id="template-contactform-name" name="template-contactform-name" class="form-control input-sm required" value="">
-                                        </div>
-                                        <div class="col-12 form-group mb-3">
-                                            <label for="template-contactform-email">Email Address:*</label>
-                                            <input type="email" id="template-contactform-email" name="template-contactform-email" class="form-control input-sm required" value="">
-                                        </div>
-                                        <div class="col-12 form-group mb-4">
-                                            <label for="template-contactform-website">Website:*</label>
-                                            <input type="text" id="template-contactform-website" name="template-contactform-website" class="form-control input-sm required" value="">
-                                        </div>
-                                        <div class="col-12 form-group d-none">
-                                            <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
-                                        </div>
-                                        <div class="col-12 form-group mb-0">
-                                            <button class="button button-rounded w-100 nott ls0 m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply Now</button>
-                                        </div>
-
-                                        <input type="hidden" name="prefix" value="template-contactform-">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
 
         <!-- Works/Projects
         ============================================= -->
@@ -247,6 +194,9 @@
                     </article>
                 </div>
                 @endforeach
+                    <div class="center">
+                        <a href="{{route('blogs')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Blogs</a>
+                    </div>
             </div>
 
         </div>

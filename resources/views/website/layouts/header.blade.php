@@ -62,11 +62,9 @@
 
                     <!-- Top Search
                     ============================================= -->
-                    <div id="top-search" class="header-misc-icon">
-                        <a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
-                    </div><!-- #top-search end -->
 
-                    <a href="demo-seo-about.html" class="button button-rounded ms-3 d-none d-sm-block">Get Started</a>
+
+                    <a href="@if(app()->getLocale() == 'ar') {{route('lang-en')}} @else {{route('lang-ar')}} @endif" class="button button-rounded ms-3 d-none d-sm-block">@if(app()->getLocale() == 'ar') English @else عربى @endif</a>
 
                 </div>
 
@@ -75,9 +73,7 @@
                 </div>
 
                 @include('website.layouts.nav')
-                <form class="top-search-form" action="search.html" method="get">
-                    <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter.." autocomplete="off">
-                </form>
+
 
             </div>
         </div>

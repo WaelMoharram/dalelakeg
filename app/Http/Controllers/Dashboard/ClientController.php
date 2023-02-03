@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\ServiceRequest;
-use App\Models\Service;
+use App\Http\Requests\ClientRequest;
+use App\Models\Client;
 use Illuminate\Support\Facades\Auth;
 
-class ServiceController extends Controller
+class ClientController extends Controller
 {
 
     /**
@@ -29,9 +29,9 @@ class ServiceController extends Controller
     public function index()
     {
 
-        $services = Service::where('type','service')->get();
+        $clients = Client::all();
 
-        return view('dashboard.services.index', compact('services'));
+        return view('dashboard.clients.index', compact('clients'));
     }
 
     /**
@@ -42,8 +42,8 @@ class ServiceController extends Controller
     public function create()
     {
 
-        $service=new Service();
-        return view('dashboard.services.create',compact('service'));
+        $client=new Client();
+        return view('dashboard.clients.create',compact('client'));
     }
 
     /**
@@ -51,7 +51,7 @@ class ServiceController extends Controller
      *
      * @return Response
      */
-    public function store(ServiceRequest $request)
+    public function store(ClientRequest $request)
     {
 
         $requests = $request->all();
@@ -61,10 +61,10 @@ class ServiceController extends Controller
         }
 
 
-        $service = Service::create($requests);
+        $client = Client::create($requests);
 
         toast(__('Added successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.clients.index'));
     }
 
     /**
@@ -76,9 +76,9 @@ class ServiceController extends Controller
     public function show($id)
     {
 
-        $service = Service::findOrFail($id);
+        $client = Client::findOrFail($id);
 
-        return view('dashboard.services.show',compact('service'));
+        return view('dashboard.clients.show',compact('client'));
     }
 
     /**
@@ -90,9 +90,9 @@ class ServiceController extends Controller
     public function edit($id)
     {
 
-        $service = Service::findOrFail($id);
-        //$service['name']['ar'] = $serviceModel->getTranslation('name', 'ar');
-        return view('dashboard.services.edit',compact('service'));
+        $client = Client::findOrFail($id);
+        //$client['name']['ar'] = $clientModel->getTranslation('name', 'ar');
+        return view('dashboard.clients.edit',compact('client'));
     }
 
     /**
@@ -101,7 +101,7 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update($id, ServiceRequest $request)
+    public function update($id, ClientRequest $request)
     {
 
         $requests=$request->all();
@@ -111,10 +111,10 @@ class ServiceController extends Controller
         }
 
 
-        $service = Service::findOrFail($id);
-        $service->fill($requests)->save();
+        $client = Client::findOrFail($id);
+        $client->fill($requests)->save();
         toast(__('Edited successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.clients.index'));
     }
 
     /**
@@ -126,10 +126,10 @@ class ServiceController extends Controller
     public function destroy($id)
     {
 
-        $service= Service::findOrFail($id);
-        $service->delete();
+        $client= Client::findOrFail($id);
+        $client->delete();
         toast(__('Deleted successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.clients.index'));
     }
 
 }

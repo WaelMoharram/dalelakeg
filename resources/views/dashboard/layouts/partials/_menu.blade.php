@@ -53,6 +53,11 @@
                     <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Services')}}</span>
                 </a>
             </li>
+            <li class=" nav-item @if(Request::is('dashboard/works')) active open  @endif">
+                <a href="{{route('dashboard.works.index')}}">
+                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Works')}}</span>
+                </a>
+            </li>
 
 
             <li class=" nav-item @if(Request::is('dashboard/blogs')) active open  @endif">

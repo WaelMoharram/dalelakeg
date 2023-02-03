@@ -78,7 +78,7 @@ class HomeController extends Controller
     }
 
     public function services(){
-        $services = Service::all();
+        $services = Service::where('type','service')->get();
         return view('website.services',compact('services'));
     }
 

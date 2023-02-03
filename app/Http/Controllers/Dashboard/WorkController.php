@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Dashboard\Website;
+namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\Website\ServiceRequest;
+use App\Http\Requests\ServiceRequest;
 use App\Models\Service;
+use Illuminate\Support\Facades\Auth;
 
-class ServiceController extends Controller
+class WorkController extends Controller
 {
 
     /**
@@ -28,9 +29,9 @@ class ServiceController extends Controller
     public function index()
     {
 
-        $services = Service::where('type','service')->get();
+        $services = Service::where('type','work')->get();
 
-        return view('dashboard.website.services.index', compact('services'));
+        return view('dashboard.works.index', compact('services'));
     }
 
     /**
@@ -42,7 +43,7 @@ class ServiceController extends Controller
     {
 
         $service=new Service();
-        return view('dashboard.website.services.create',compact('service'));
+        return view('dashboard.works.create',compact('service'));
     }
 
     /**
@@ -54,10 +55,16 @@ class ServiceController extends Controller
     {
 
         $requests = $request->all();
+        if ($request->hasFile('image')) {
+            $requests['image'] = saveImage($request->image, 'images');
+            $request->files->remove('image');
+        }
+
+$requests['type']='work';
         $service = Service::create($requests);
 
         toast(__('Added successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.works.index'));
     }
 
     /**
@@ -68,7 +75,10 @@ class ServiceController extends Controller
      */
     public function show($id)
     {
-        abort(403);
+
+        $service = Service::findOrFail($id);
+
+        return view('dashboard.works.show',compact('service'));
     }
 
     /**
@@ -81,8 +91,8 @@ class ServiceController extends Controller
     {
 
         $service = Service::findOrFail($id);
-
-        return view('dashboard.website.services.edit',compact('service'));
+        //$service['name']['ar'] = $serviceModel->getTranslation('name', 'ar');
+        return view('dashboard.works.edit',compact('service'));
     }
 
     /**
@@ -91,14 +101,20 @@ class ServiceController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update($id,ServiceRequest $request)
+    public function update($id, ServiceRequest $request)
     {
 
         $requests=$request->all();
+        if ($request->hasFile('image')) {
+            $requests['image'] = saveImage($request->image, 'images');
+            $request->files->remove('image');
+        }
+
+
         $service = Service::findOrFail($id);
         $service->fill($requests)->save();
         toast(__('Edited successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.works.index'));
     }
 
     /**
@@ -113,7 +129,7 @@ class ServiceController extends Controller
         $service= Service::findOrFail($id);
         $service->delete();
         toast(__('Deleted successfully'),'success');
-        return redirect(route('dashboard.services.index'));
+        return redirect(route('dashboard.works.index'));
     }
 
 }

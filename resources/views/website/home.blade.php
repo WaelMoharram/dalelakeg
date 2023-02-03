@@ -27,11 +27,11 @@
         <div class="section bg-transparent m-0 border-bottom py-5">
             <div class="container">
                 <div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="100" data-loop="true" data-autoplay="5000" data-nav="false" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
-                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website').'/demos/business/images/clients/linkedin.svg'}}" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src={{asset('assets/website').'demos/business/images/clients/nat-geo.svg'}} alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src={{asset('assets/website').'demos/business/images/clients/jetblue.svg'}}  alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/demos/business/images/clients/zillow.svg" alt="Brands"></a></div>
-                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/demos/business/images/clients/amazon.svg" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/images/logo.png" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/images/logo.png" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/images/logo.png"  alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/images/logo.png" alt="Brands"></a></div>
+                    <div class="oc-item"><a href="#"><img src="{{asset('assets/website')}}/images/logo.png" alt="Brands"></a></div>
                 </div>
             </div>
         </div>
@@ -54,10 +54,10 @@
                 <div class="row justify-content-between align-items-center">
 
                     <div class="col-lg-4 col-sm-6">
-                        @foreach(\App\Models\Service::all()->take(3) as $service)
+                        @foreach(\App\Models\Service::where('type','service')->get()->take(3) as $service)
                         <div class="feature-box mt-5 flex-md-row-reverse text-md-end border-0">
                             <div class="fbox-icon">
-                                <a href="{{route('service',$service->id)}}"><img src="{{$service->image}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                <a href="{{route('service',$service->id)}}"><img src="{{url($service->image)}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                             </div>
                             <div class="fbox-content">
                                 <h3 class="nott ls0">{{$service->name}}</h3>
@@ -73,10 +73,10 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
-                        @foreach(\App\Models\Service::all()->take(3) as $service)
+                        @foreach(\App\Models\Service::where('type','service')->get()->take(3) as $service)
                             <div class="feature-box mt-5 ">
                                 <div class="fbox-icon">
-                                    <a href="{{route('service',$service->id)}}"><img src="{{$service->image}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
+                                    <a href="{{route('service',$service->id)}}"><img src="{{url($service->image)}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
                                 </div>
                                 <div class="fbox-content">
                                     <h3 class="nott ls0">{{$service->name}}</h3>
@@ -157,114 +157,25 @@
                 </div>
 
                 <div id="portfolio" class="portfolio row grid-container gutter-20">
-
+                    @foreach(\App\Models\Service::where('type','work')->get()->take(6) as $work)
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
                         <div class="grid-inner">
                             <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/1.jpg" alt="The Atmosphere">
+                                <img src="{{url($work->image)}}" alt="{{$work->name}}">
                                 <div class="bg-overlay">
                                     <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
+                                        <a href="{{route('service',$work->id)}}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
                                     </div>
                                     <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="#">The Atmosphere</a></h3>
-                                <span>Digital Marketing</span>
+                                <h3><a href="{{route('service',$work->id)}}">{{$work->name}}</a></h3>
+                                <span>{{$work->description}}</span>
                             </div>
                         </div>
                     </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/2.jpg" alt="Wavelength Structure">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Wavelength Structure</h3>
-                                <span>SEO</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/3.jpg" alt="Greenhouse Garden">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Simplicity Pages</h3>
-                                <span>Analytics</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/4.jpg" alt="Industrial Hub">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>SEO Analysis</h3>
-                                <span>SEO</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/5.jpg" alt="Corporate Headquarters">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Marketing Strategy</h3>
-                                <span>Digital Marketing</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{asset('assets/website')}}/demos/seo/images/works/6.jpg" alt="Space Station">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="#" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3>Space Station</h3>
-                                <span>Social Media</span>
-                            </div>
-                        </div>
-                    </article>
+@endforeach
 
                 </div>
 
@@ -287,78 +198,23 @@
                 </div>
 
                 <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
+                    @foreach(\App\Models\Client::all() as $client)
+                    <div class="oc-item">
+                        <div class="testimonial">
+                            <div class="testi-image">
+                                <a href="#"><img src="{{url($client->image)}}" alt="Customer Testimonails"></a>
+                            </div>
+                            <div class="testi-content">
+                                <p>{{$client->description}}</p>
+                                <div class="testi-meta">
+                                    {{$client->name}}
+                                    <span>{{$client->title}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
 
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{asset('assets/website')}}/demos/pet/images/testimonials/1.jpg" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum repellendus!</p>
-                                <div class="testi-meta">
-                                    John Doe
-                                    <span>XYZ Inc.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{asset('assets/website')}}/demos/pet/images/testimonials/2.jpg" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-                                <div class="testi-meta">
-                                    Collis Ta'eed
-                                    <span>Envato Inc.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{asset('assets/website')}}/demos/pet/images/testimonials/3.jpg" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-                                <div class="testi-meta">
-                                    Collis Ta'eed
-                                    <span>Envato Inc.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{asset('assets/website')}}/demos/pet/images/testimonials/4.jpg" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-                                <div class="testi-meta">
-                                    Mary Jane
-                                    <span>Google Inc.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{asset('assets/website')}}/images/testimonials/5.jpg" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</p>
-                                <div class="testi-meta">
-                                    Steve Jobs
-                                    <span>Apple Inc.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -367,70 +223,30 @@
         ============================================= -->
         <div class="container py-4">
             <div class="heading-block border-bottom-0 center">
-                <div class="badge rounded-pill badge-default">Latest Articles</div>
-                <h3 class="nott ls0">Recently From the Blog</h3>
+                <div class="badge rounded-pill badge-default">{{__('Latest Articles')}}</div>
+                <h3 class="nott ls0">{{__('Recently From the Blog')}}</h3>
             </div>
 
             <div class="row mt-5 clearfix">
-                <div class="col-md-4">
+                @foreach(\App\Models\Blog::where('type','blog')->get()->take(3) as $blog)
+                    <div class="col-md-4">
                     <article class="entry">
                         <div class="entry-image mb-3">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/blog/1.jpg" alt="Image 3"></a>
+                            <a href="{{route('blog',$blog->id)}}"><img src="{{url($blog->image)}}" alt="{{$blog->title}}"></a>
                         </div>
                         <div class="entry-title">
-                            <h3><a href="#">Top Most SEO Optizied Websites</a></h3>
+                            <h3><a href="{{route('blog',$blog->id)}}">{{$blog->title}}</a></h3>
                         </div>
                         <div class="entry-meta">
                             <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 11 Mar 2021</a></li>
+                                <li><i class="icon-line2-user"></i><a href="#"> {{$blog->user->name}}</a></li>
+                                <li><i class="icon-calendar-times1"></i><a href="#"> {{$blog->created_at}}</a></li>
                             </ul>
                         </div>
-                        <div class="entry-content clearfix">
-                            <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem progressive technology through pariatur quibusdam veritatis quisquam. Efficiently communicate alternative.</p>
-                        </div>
-                    </article>
-                </div>
 
-                <div class="col-md-4">
-                    <article class="entry">
-                        <div class="entry-image mb-3">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/blog/2.jpg" alt="Image 3"></a>
-                        </div>
-                        <div class="entry-title">
-                            <h3><a href="#">10 Recent SEO Tips for Startups</a></h3>
-                        </div>
-                        <div class="entry-meta">
-                            <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> Semicolonweb</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 18 Apr 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content clearfix">
-                            <p>Interactively predominate progressive technology through distinctive materials. Progressively benchmark extensible intellectual. Exercitationem progressive technology through pariatur.</p>
-                        </div>
                     </article>
                 </div>
-
-                <div class="col-md-4">
-                    <article class="entry">
-                        <div class="entry-image mb-3">
-                            <a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/blog/3.jpg" alt="Image 3"></a>
-                        </div>
-                        <div class="entry-title">
-                            <h3><a href="#">3 Ways to Transform Your Site Into a SEO</a></h3>
-                        </div>
-                        <div class="entry-meta">
-                            <ul>
-                                <li><i class="icon-line2-user"></i><a href="#"> John Doe</a></li>
-                                <li><i class="icon-calendar-times1"></i><a href="#"> 06 Aug 2021</a></li>
-                            </ul>
-                        </div>
-                        <div class="entry-content clearfix">
-                            <p>Globally synergize premium metrics with holistic e-markets. Professionally morph interoperable networks vis-a-vis value-added methods.</p>
-                        </div>
-                    </article>
-                </div>
+                @endforeach
             </div>
 
         </div>

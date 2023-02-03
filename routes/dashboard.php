@@ -32,6 +32,8 @@ Route::name('dashboard.')->middleware(['language', 'auth:web'])->prefix('dashboa
     Route::resource('about-us', 'AboutUsController');
     Route::resource('sliders', 'SliderController');
     Route::resource('services', 'ServiceController');
+    Route::resource('works', 'WorkController');
+    Route::resource('clients', 'ClientController');
 
 
     Route::resource('contact-us', 'ContactUsController');

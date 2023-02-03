@@ -1,9 +1,9 @@
 @if($errors->any())
     {!! implode('', $errors->all('<div>:message</div>')) !!}
 @endif
-@if(isset($service->image))
+@if(isset($client->image))
     <div class="col-md-12">
-        <img id="image" src="{{url($service->image)}}" style="width: 100px;border-radius: 50px;">
+        <img id="image" src="{{url($client->image)}}" style="width: 100px;border-radius: 50px;">
     </div>
 @else
     <div class="col-md-12">
@@ -28,6 +28,17 @@
     {!! Form::text('name[en]',null,['id'=>'name-en','class'=>'form-control col','placeholder'=>__("Name in English")]) !!}
     {{input_error($errors,'name.en')}}
 </div>
+<div class="form-group py-1 col-md-6">
+    <label for="title-ar"> {{__('Title in Arabic')}}</label>
+    {!! Form::text('title[ar]',null,['id'=>'title-ar','class'=>'form-control col','placeholder'=>__("Title in Arabic")]) !!}
+    {{input_error($errors,'title.ar')}}
+</div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="title-en"> {{__('Title in English')}}</label>
+    {!! Form::text('title[en]',null,['id'=>'title-en','class'=>'form-control col','placeholder'=>__("Title in English")]) !!}
+    {{input_error($errors,'title.en')}}
+</div>
 
 <div class="form-group py-1 col-md-6">
     <label for="description-ar"> {{__('Description in Arabic')}}</label>
@@ -42,23 +53,8 @@
 </div>
 
 
-<div class="form-group py-1 col-md-6">
-    <label for="long-description-ar"> {{__('Long description in Arabic')}} </label>
-    {!! Form::textarea('long_description[ar]',null,['id'=>'long-description-ar','class'=>'form-control col']) !!}
-    {{input_error($errors,'long_description.ar')}}
-</div>
-
-<div class="form-group py-1 col-md-6">
-    <label for="long-description-en"> {{__('Long description in English')}} </label>
-    {!! Form::textarea('long_description[en]',null,['id'=>'long-description-en','class'=>'form-control col']) !!}
-    {{input_error($errors,'long_description.en')}}
-</div>
-
 @section('footer')
-    <script>
-        CKEDITOR.replace( 'long_description[ar]' );
-        CKEDITOR.replace( 'long_description[en]' );
-    </script>
+
 
     <script>
         console.log('out')

@@ -19,7 +19,7 @@
             <div class="mega-menu-content mega-menu-style-2 px-0">
                 <div class="container">
                     <div class="row">
-                        @foreach(\App\Models\Service::all()->take(10) as $service)
+                        @foreach(\App\Models\Service::where('type','service')->get()->take(6) as $service)
                         <a href="{{route('service',$service->id)}}" class="mega-menu-column sub-menu-container col-lg-4 border-bottom h-bg-light py-4">
                             <div class="feature-box">
                                 <div class="fbox-icon mb-2">

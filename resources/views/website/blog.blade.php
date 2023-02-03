@@ -11,6 +11,7 @@
     <div id="particles-line"></div>
 
     <div class="container clearfix mt-4">
+        <img src="{{$blog->image}}">
         <h1>{!! $blog->title !!}</h1>
 
     </div>

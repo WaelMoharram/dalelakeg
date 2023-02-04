@@ -99,8 +99,8 @@
         <div class="section m-0" style="background: url('{{asset('assets/website')}}/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
             <div class="container">
                 <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">Completed Projects</div>
-                    <h3 class="nott ls0">Our Latest Works</h3>
+                    <div class="badge rounded-pill badge-default">{{__('Completed Projects')}}</div>
+                    <h3 class="nott ls0">{{__('Our Latest Works')}}</h3>
                 </div>
 
                 <div id="portfolio" class="portfolio row grid-container gutter-20">
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="center">
-                    <a href="demo-seo-about.html" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Works</a>
+                    <a href="{{route('works')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">{{__('View All Works')}}</a>
                 </div>
 
             </div>

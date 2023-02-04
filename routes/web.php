@@ -34,6 +34,8 @@ Route::middleware(['language'])->group(function () {
     Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('contact-us');
     Route::get('/contact-form', [HomeController::class, 'contactForm'])->name('contact-form');
 
+    Route::get('/works', [HomeController::class, 'works'])->name('works');
+
     Route::get('/services', [HomeController::class, 'services'])->name('services');
 
     Route::get('/service/{id}', [HomeController::class, 'service'])->name('service');

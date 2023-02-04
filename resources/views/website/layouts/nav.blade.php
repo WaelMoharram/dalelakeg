@@ -33,7 +33,7 @@
                         </a>
                         @endforeach
                         <div class="mega-menu-column sub-menu-container col-12 p-0">
-                            <a href="demo-seo-about.html" class="button button-rounded button-large nott ls0 w-100 text-center m-0 rounded-0 py-3 button-light ">View All <i class="icon-line-arrow-right"></i></a>
+                            <a href="{{route('services')}}" class="button button-rounded button-large nott ls0 w-100 text-center m-0 rounded-0 py-3 button-light ">{{__('View All')}} <i class="icon-line-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

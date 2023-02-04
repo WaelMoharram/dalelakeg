@@ -31,6 +31,7 @@ class ServiceController extends Controller
 
         $services = Service::where('type','service')->get();
 
+
         return view('dashboard.services.index', compact('services'));
     }
 

@@ -3,6 +3,7 @@
     <td><img src="{!! url('/').'/'.$service->image !!}" style="width: 100px; height: 100px;"></td>
     <td>{!! $service->name !!}</td>
     <td>
+
         <div class="btn-group" role="group" aria-label="Vertical button group">
 
             <div class="btn-group" role="group">

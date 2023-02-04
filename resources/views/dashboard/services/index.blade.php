@@ -18,6 +18,7 @@
                     <div class="card-content">
                         <div class="card-body card-dashboard">
                             <div class="table-responsive">
+
                                 @include('dashboard.services.partials._table')
                             </div>
                         </div>

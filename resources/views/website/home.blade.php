@@ -69,7 +69,7 @@
 
                     </div>
                     <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
-                        <img src="{{asset('assets/website')}}/demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+                        <img src="{{asset('assets/website')}}/demos/seo/images/sections/2.jpeg" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
                     </div>
 
                     <div class="col-lg-4 col-sm-6">

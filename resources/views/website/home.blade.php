@@ -137,34 +137,34 @@
 
         <!-- Testimonials
         ============================================= -->
-        <div class="section mt-0" style="background: url('{{asset('assets/website')}}/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">Testimonials</div>
-                    <h3 class="nott ls0">What Clients Says</h3>
-                </div>
+{{--        <div class="section mt-0" style="background: url('{{asset('assets/website')}}/demos/seo/images/sections/3.jpg') no-repeat top center; background-size: cover; padding: 80px 0 70px;">--}}
+{{--            <div class="container">--}}
+{{--                <div class="heading-block border-bottom-0 center">--}}
+{{--                    <div class="badge rounded-pill badge-default">Testimonials</div>--}}
+{{--                    <h3 class="nott ls0">What Clients Says</h3>--}}
+{{--                </div>--}}
 
-                <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">
-                    @foreach(\App\Models\Client::all() as $client)
-                    <div class="oc-item">
-                        <div class="testimonial">
-                            <div class="testi-image">
-                                <a href="#"><img src="{{url($client->image)}}" alt="Customer Testimonails"></a>
-                            </div>
-                            <div class="testi-content">
-                                <p>{{$client->description}}</p>
-                                <div class="testi-meta">
-                                    {{$client->name}}
-                                    <span>{{$client->title}}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
+{{--                <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget clearfix" data-margin="0" data-pagi="true" data-loop="true" data-center="true" data-autoplay="5000" data-items-sm="1" data-items-md="2" data-items-xl="3">--}}
+{{--                    @foreach(\App\Models\Client::all() as $client)--}}
+{{--                    <div class="oc-item">--}}
+{{--                        <div class="testimonial">--}}
+{{--                            <div class="testi-image">--}}
+{{--                                <a href="#"><img src="{{url($client->image)}}" alt="Customer Testimonails"></a>--}}
+{{--                            </div>--}}
+{{--                            <div class="testi-content">--}}
+{{--                                <p>{{$client->description}}</p>--}}
+{{--                                <div class="testi-meta">--}}
+{{--                                    {{$client->name}}--}}
+{{--                                    <span>{{$client->title}}</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    @endforeach--}}
 
-                </div>
-            </div>
-        </div>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
         <!-- Blogs
         ============================================= -->
@@ -195,7 +195,7 @@
                 </div>
                 @endforeach
                     <div class="center">
-                        <a href="{{route('blogs')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">View All Blogs</a>
+                        <a href="{{route('blogs')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">{{__('View All Blogs')}}</a>
                     </div>
             </div>
 

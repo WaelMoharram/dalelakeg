@@ -74,7 +74,6 @@ class HomeController extends Controller
     public function blogs(){
         $blogs = Blog::where('type','blog')->paginate(15);
         return view('website.blogs',compact('blogs'));
-
     }
     public function works(){
         $works = Service::where('type','work')->paginate(15);

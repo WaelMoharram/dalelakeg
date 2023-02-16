@@ -87,7 +87,7 @@ class HomeController extends Controller
     }
 
     public function services(){
-        $services = Service::where('type','service')->get();
+        $services = Service::where('type','service')->orderBy('order_number')->get();
         return view('website.services',compact('services'));
     }
 

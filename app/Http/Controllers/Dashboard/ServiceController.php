@@ -29,7 +29,7 @@ class ServiceController extends Controller
     public function index()
     {
 
-        $services = Service::where('type','service')->get();
+        $services = Service::where('type','service')->orderBy('order_number')->get();
 
 
         return view('dashboard.services.index', compact('services'));

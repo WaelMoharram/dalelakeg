@@ -29,6 +29,12 @@
     {{input_error($errors,'name.en')}}
 </div>
 
+<div class="form-group py-1 col-md-12">
+    <label for="order-number"> {{__('Order number')}}</label>
+    {!! Form::text('order_number',null,['id'=>'order-number','class'=>'form-control col']) !!}
+    {{input_error($errors,'order_number')}}
+</div>
+
 <div class="form-group py-1 col-md-6">
     <label for="description-ar"> {{__('Description in Arabic')}}</label>
     {!! Form::textarea('description[ar]',$service->getTranslation('description', 'ar') ?? null,['id'=>'description-ar','class'=>'form-control col','placeholder'=>__("Description in Arabic")]) !!}

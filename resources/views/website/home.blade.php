@@ -54,7 +54,7 @@
                 <div class="row justify-content-between align-items-center">
 
                     <div class="col-lg-4 col-sm-6">
-                        @foreach(\App\Models\Service::where('type','service')orderBy('order_number')->->get()->take(3) as $service)
+                        @foreach(\App\Models\Service::where('type','service')->orderBy('order_number')->->get()->take(3) as $service)
                         <div class="feature-box mt-5 flex-md-row-reverse text-md-end border-0">
                             <div class="fbox-icon">
                                 <a href="{{route('service',$service->id)}}"><img src="{{url($service->image)}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>

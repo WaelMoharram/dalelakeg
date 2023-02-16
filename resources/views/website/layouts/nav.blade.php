@@ -85,6 +85,7 @@
                         @endif
                     </div></a></li>
 
+
             <li class="menu-item @if(Request::is('/')) current  @endif"><a class="menu-link" href="{{route('home')}}"><div>{{__('Home')}}</div></a></li>
 
 

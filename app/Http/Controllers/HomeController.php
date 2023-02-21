@@ -10,6 +10,7 @@ use App\Models\AboutUs;
 use App\Models\Contact;
 
 use App\Models\FAQs;
+use App\Models\Image;
 use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Task;
@@ -94,6 +95,12 @@ class HomeController extends Controller
     public function service($id){
         $service = Service::find($id);
         return view('website.service',compact('service'));
+    }
+
+    public function images(){
+        $images = Image::OrderByDesc('id')->paginate(10);
+        return view('website.images',compact('images'));
+
     }
 
 

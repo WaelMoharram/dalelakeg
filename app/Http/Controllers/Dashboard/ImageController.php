@@ -55,10 +55,6 @@ class ImageController extends Controller
     {
 
         $requests = $request->all();
-        if ($request->hasFile('image')) {
-            $requests['image'] = saveImage($request->image, 'images');
-            $request->files->remove('image');
-        }
 
         if ($request->hasFile('image')) {
             $requests['image'] = saveImage($request->image, 'images');
@@ -110,10 +106,6 @@ class ImageController extends Controller
     {
 
         $requests=$request->all();
-        if ($request->hasFile('image')) {
-            $requests['image'] = saveImage($request->image, 'images');
-            $request->files->remove('image');
-        }
         if ($request->hasFile('image')) {
             $requests['image'] = saveImage($request->image, 'images');
             $request->files->remove('image');

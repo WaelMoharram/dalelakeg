@@ -98,7 +98,7 @@ class HomeController extends Controller
     }
 
     public function images(){
-        $images = Image::OrderByDesc('id')->paginate(10);
+        $images = Image::OrderByDesc('id')->paginate(9);
         return view('website.images',compact('images'));
 
     }

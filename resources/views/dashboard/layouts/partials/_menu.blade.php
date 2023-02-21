@@ -36,6 +36,12 @@
                 </a>
             </li>
 
+            <li class=" nav-item @if(Request::is('dashboard/Images')) active open  @endif">
+                <a href="{{route('dashboard.images.index')}}">
+                    <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('Images')}}</span>
+                </a>
+            </li>
+
             <li class=" nav-item @if(Request::is('dashboard/faqs')) active open  @endif">
                 <a href="{{route('dashboard.faqs.index')}}">
                     <i class="feather icon-image"></i><span class="menu-item" data-i18n="Fixed navbar">{{__('FAQs')}}</span>

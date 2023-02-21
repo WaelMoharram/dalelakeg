@@ -50,7 +50,7 @@
                     <div class="section bg-transparent">
                         <div class="container">
                             <div class="row col-mb-30 align-content-stretch">
-                            @foreach($imagess as $image)
+                            @foreach($images as $image)
                                 <div class="col-lg-4 col-md-6 ">
                                     <a target="_blank" href="{{url($image->image)}}" class="card h-shadow h-translate-y-sm all-ts">
                                         <div class="card-body p-5">

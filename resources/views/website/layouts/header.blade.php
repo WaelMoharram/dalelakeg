@@ -11,7 +11,7 @@
                 <div class="top-links">
                     <ul class="top-links-container">
                         <li class="top-links-item"><a href="{{route('home')}}">{{__('Home')}}</a></li>
-                        <li class="top-links-item"><a href="{{__('faqs')}}">{{__('FAQs')}}</a></li>
+                        <li class="top-links-item"><a href="{{'faqs'}}">{{__('FAQs')}}</a></li>
                         <li class="top-links-item"><a target="_blank" href="https://wa.me/{{option('whatsapp')}}">{{__('Contact')}}</a></li>
 {{--                        <li class="top-links-item"><a href="#"><img src="{{asset('assets/website')}}/demos/seo/images/flags/eng.png" alt="Lang">Eng</a>--}}
 {{--                            <ul class="top-links-sub-menu">--}}

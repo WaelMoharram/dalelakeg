@@ -32,6 +32,8 @@
         </li>
             <li class="menu-item @if(Request::is('images')) current  @endif"><a class="menu-link" href="{{route('images')}}"><div>{{__('Images')}}</div></a></li>
 
+            <li class="menu-item @if(Request::is('blogs')) current  @endif"><a class="menu-link" href="{{route('blogs')}}"><div>{{__('Blogs')}}</div></a></li>
+
         <li class="menu-item @if(Request::is('faqs')) current  @endif"><a class="menu-link" href="{{route('faqs')}}"><div>{{__('FAQs')}}</div></a></li>
 
             <li class="menu-item"><a class="menu-link" href="@if(app()->getLocale() == 'ar')
@@ -64,6 +66,7 @@
             </li>
 
             <li class="menu-item @if(Request::is('faqs')) current  @endif"><a class="menu-link" href="{{route('faqs')}}"><div>{{__('FAQs')}}</div></a></li>
+            <li class="menu-item @if(Request::is('blogs')) current  @endif"><a class="menu-link" href="{{route('blogs')}}"><div>{{__('Blogs')}}</div></a></li>
             <li class="menu-item @if(Request::is('images')) current  @endif"><a class="menu-link" href="{{route('images')}}"><div>{{__('Images')}}</div></a></li>
 
             <li class="menu-item mega-menu"><div class="menu-link"><div>{{__('Services')}}</div></div>

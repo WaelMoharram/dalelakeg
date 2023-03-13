@@ -4,6 +4,7 @@
         <th scope="col">{{__('#') }}</th>
         <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Service')}}</th>
+        <th scope="col">{{__('Views')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@
         <th scope="col">{{__('#') }}</th>
         <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Service')}}</th>
+        <th scope="col">{{__('Views')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </tr>
     </tfoot>

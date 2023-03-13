@@ -5,6 +5,7 @@
         <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Title')}}</th>
         <th scope="col">{{__('Language')}}</th>
+        <th scope="col">{{__('Views')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </thead>
     <tbody>
@@ -18,6 +19,7 @@
         <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Title')}}</th>
         <th scope="col">{{__('Language')}}</th>
+        <th scope="col">{{__('Views')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </tr>
     </tfoot>

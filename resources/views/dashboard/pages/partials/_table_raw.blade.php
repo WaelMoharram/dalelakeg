@@ -3,6 +3,7 @@
     <td><img src="{!! url('/').'/'.$page->image !!}" style="width: 100px; height: 100px;"></td>
     <td>{!! $page->title !!}</td>
     <td>{!! $page->lang == 'ar' ? __('Arabic') : __('English') !!}</td>
+    <td>{!! $page->views !!}</td>
     <td>
         <div class="btn-group" role="group" aria-label="Vertical button group">
 

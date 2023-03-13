@@ -94,6 +94,8 @@ class HomeController extends Controller
 
     public function service($id){
         $service = Service::find($id);
+        $service->views = $service->views+1;
+        $service->save();
         return view('website.service',compact('service'));
     }
 

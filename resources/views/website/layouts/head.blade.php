@@ -42,7 +42,7 @@
 
  <meta property="og:title" content="{{__(env('APP_NAME'))}} | @yield('title')">
  <
- <meta property="og:image" content="{{url($page->image ?? $blog->image ?? $service->image ?? 'assets/website/images/logo.png'}}">
+ <meta property="og:image" content="{{url($page->image ?? $blog->image ?? $service->image ?? 'assets/website/images/logo.png')}}">
 
 
 </head>

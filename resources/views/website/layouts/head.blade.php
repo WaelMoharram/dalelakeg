@@ -1,7 +1,6 @@
 <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
+    <meta name="author" content="EgMarketer" />
 
     <!-- Stylesheets
     ============================================= -->
@@ -40,6 +39,10 @@
     <!-- Document Title
         ============================================= -->
     <title>{{__(env('APP_NAME'))}} | @yield('title')</title>
+
+ <meta property="og:title" content="{{__(env('APP_NAME'))}} | @yield('title')">
+ <
+ <meta property="og:image" content="{{url($page->image ?? $blog->image ?? $service->image ?? 'assets/website/images/logo.png'}}">
 
 
 </head>

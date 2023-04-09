@@ -31,12 +31,6 @@
                         <h3 class="nott ls0 mb-3">{!! $blog->title !!}</h3>
 
                     </div>
-                    <div class="entry-meta">
-                        <ul>
-                            <li><i class="icon-line2-user"></i><a href="#"> {{$blog->user->name}}</a></li>
-                            <li><i class="icon-calendar-times1"></i><a href="#"> {{$blog->created_at}}</a></li>
-                        </ul>
-                    </div>
                 </div>
 
                 <div class="clear"></div>
@@ -48,6 +42,12 @@
 
                     <img src="{{url($blog->image)}}">
 
+                    <div class="entry-meta">
+                        <ul>
+                            <li><i class="icon-line2-user"></i><a href="#"> {{$blog->user->name}}</a></li>
+                            <li><i class="icon-calendar-times1"></i><a href="#"> {{$blog->created_at}}</a></li>
+                        </ul>
+                    </div>
                     {!! $blog->content !!}
                 </div>
 

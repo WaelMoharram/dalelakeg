@@ -50,7 +50,9 @@
                             <li><i class="icon-calendar-times1"></i><a href="#"> {{$blog->created_at}}</a></li>
                         </ul>
                     </div>
+                    <div>
                     {!! $blog->content !!}
+                    </div>
                 </div>
 
             </div><!-- .postcontent end -->

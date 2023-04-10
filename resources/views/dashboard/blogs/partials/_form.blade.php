@@ -28,6 +28,11 @@
     {{input_error($errors,'title')}}
 </div>
 
+<div class="form-group py-1 col-md-12">
+    <label for="order-number"> {{__('Order number')}}</label>
+    {!! Form::text('order_number',null,['id'=>'order-number','class'=>'form-control col']) !!}
+    {{input_error($errors,'order_number')}}
+</div>
 
 <div class="form-group py-1 col-md-12">
     <label for="content"> {{__('Content')}} </label>

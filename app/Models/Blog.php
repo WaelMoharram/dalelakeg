@@ -14,7 +14,7 @@ class Blog extends Model
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-    protected $fillable = array('user_id', 'title', 'content', 'image','lang','show_in_home','type');
+    protected $guarded = array('id');
 
 
     public function user()

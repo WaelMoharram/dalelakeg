@@ -54,6 +54,12 @@
     {{input_error($errors,'long_description.en')}}
 </div>
 
+<div class="form-group py-1 col-md-12">
+    <label for="order-number"> {{__('Order number')}}</label>
+    {!! Form::text('order_number',null,['id'=>'order-number','class'=>'form-control col']) !!}
+    {{input_error($errors,'order_number')}}
+</div>
+
 @section('footer')
     <script>
         CKEDITOR.replace( 'long_description[ar]' );

@@ -37,7 +37,7 @@ class BlogController extends Controller
      */
     public function show($id)
     {
-         $blog= Blog::findOrFail($id);
+         return $blog= Blog::findOrFail($id);
          $blog->views = $blog->views + 1;
          $blog->save();
         return view('website.blog',compact('blog'));

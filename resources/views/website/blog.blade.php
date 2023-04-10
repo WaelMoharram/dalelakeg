@@ -40,7 +40,9 @@
                 <div class="col-lg-10">
 
 
-                    <img src="{{url($blog->image)}}">
+                    <img style="display: block;
+    margin-left: auto;
+    margin-right: auto;" src="{{url($blog->image)}}">
 
                     <div class="entry-meta">
                         <ul>

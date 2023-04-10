@@ -83,6 +83,8 @@ class HomeController extends Controller
     }
     public function blog($id){
         $blog = Blog::find($id);
+        $blog->views = $blog->views + 1;
+        $blog->save();
         return view('website.blog',compact('blog'));
 
     }

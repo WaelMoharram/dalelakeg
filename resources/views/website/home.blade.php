@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
-                        @foreach(\App\Models\Service::where('type','service')->where('id','>',3)->orderBy('order_number')->get()->take(3) as $service)
+                        @foreach(\App\Models\Service::where('type','service')->orderBy('order_number')->get()->take(3) as $service)
                             <div class="feature-box mt-5 ">
                                 <div class="fbox-icon">
                                     <a href="{{route('service',$service->id)}}"><img src="{{url($service->image)}}" alt="Feature Icon" class="bg-transparent rounded-0"></a>
@@ -104,7 +104,7 @@
                 </div>
 
                 <div id="portfolio" class="portfolio row grid-container gutter-20">
-                    @foreach(\App\Models\Service::where('type','work')->get()->take(6) as $work)
+                    @foreach(\App\Models\Service::where('type','work')->orderBy('order_number')->get()->take(6) as $work)
                     <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
                         <div class="grid-inner">
                             <div class="portfolio-image">

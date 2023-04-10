@@ -26,7 +26,7 @@ class BlogController extends Controller
     }
 
     public function index(){
-        $blogs = Blog::where('lang',app()->getLocale())->where('type','blog')->orderBy('id', 'desc')->paginate(9);
+        $blogs = Blog::where('lang',app()->getLocale())->where('type','blog')->orderBy('order_number')->paginate(9);
 
         return view('website.blogs',compact('blogs'));
     }

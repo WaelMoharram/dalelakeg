@@ -46,7 +46,7 @@ class HomeController extends Controller
 
         $sliders = Slider::all();
 
-        $blogs = Blog::where('lang',app()->getLocale())->where('type','post')->orderBy('id', 'desc')->take(3)->get();
+        $blogs = Blog::where('lang',app()->getLocale())->where('type','post')->orderBy('order_number')->take(3)->get();
 
         return view('website.home',compact('sliders','blogs'));
     }
@@ -73,11 +73,11 @@ class HomeController extends Controller
     }
 
     public function blogs(){
-        $blogs = Blog::where('type','blog')->paginate(15);
+        $blogs = Blog::where('type','blog')->orderBy('order_number')->paginate(15);
         return view('website.blogs',compact('blogs'));
     }
     public function works(){
-        $works = Service::where('type','work')->paginate(15);
+        $works = Service::where('type','work')->orderBy('order_number')->paginate(15);
         return view('website.works',compact('works'));
 
     }

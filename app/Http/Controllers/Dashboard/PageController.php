@@ -28,7 +28,7 @@ class PageController extends Controller
     public function index()
     {
 
-        $pages = Blog::where('type','page')->get();
+        $pages = Blog::where('type','page')->orderBy('order_number')->get();
 
         return view('dashboard.pages.index', compact('pages'));
     }

@@ -29,7 +29,7 @@ class WorkController extends Controller
     public function index()
     {
 
-        $services = Service::where('type','work')->get();
+        $services = Service::where('type','work')->orderBy('order_number')->get();
 
         return view('dashboard.works.index', compact('services'));
     }

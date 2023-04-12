@@ -7,7 +7,7 @@
 :root {
 	--themecolor:  #2e3192;
 	--basefontsize: 16px;
-	--fontfamily: 'Poppins', sans-serif;
+	--fontfamily: 'Poppins','Alexandria', sans-serif;
 	--headerboxshadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 	--menufontsize: 15px;
 }
@@ -249,7 +249,7 @@ input.switch-toggle-round + label::after { border-radius: 4px }
 .testi-content p {
 	text-align: center;
 	font-style: normal;
-	font-family: var(--fontfamily,'Poppins', sans-serif);
+	font-family: var(--fontfamily,'Poppins','Alexandria', sans-serif);
 	font-size: var(--basefontsize, 16px);
 }
 

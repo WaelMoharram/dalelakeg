@@ -5,9 +5,13 @@
     <!-- Stylesheets
     ============================================= -->
 
-
+@if(app()->getLocale() == 'en')
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet" type="text/css" />
-
+    @else
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    @endif
     <link rel="stylesheet" href="{{asset('assets/website')}}/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="{{asset('assets/website')}}/style.css" type="text/css" />
 

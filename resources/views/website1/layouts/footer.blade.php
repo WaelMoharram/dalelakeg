@@ -186,7 +186,7 @@
 
                 <div class="col-md-6 text-center text-md-start">
 
-                    {{__('Develop by')}} <a href="http://www.egmarkter.com/">EG Markter</a>  {{__('Copyrights')}} &copy; {{date('Y')}} {{__('All Rights')}}<br>
+                    {{__('Develop by')}} <a href="http://www.DalelakEG.com/">EG Markter</a>  {{__('Copyrights')}} &copy; {{date('Y')}} {{__('All Rights')}}<br>
                     <div class="copyright-links"><a
                             href="@if(app()->getLocale() == 'ar'){{route('blogs.show',4)}}
                             @else

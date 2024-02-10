@@ -10,7 +10,7 @@
 
             <div class="row justify-content-between col-mb-30">
                 <div class="col-12 col-lg-auto text-center text-lg-start">
-{{__('All rights reserved EgMarkter')}} {{date('Y')}}  <br>
+{{__('All rights reserved DalelakEG')}} {{date('Y')}}  <br>
 <div class="copyright-links">
     <a href="@if(app()->getLocale() == 'ar')
     {{route('blog',3)}}

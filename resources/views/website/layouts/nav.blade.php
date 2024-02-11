@@ -36,17 +36,17 @@
 
         <li class="menu-item @if(Request::is('faqs')) current  @endif"><a class="menu-link" href="{{route('faqs')}}"><div>{{__('FAQs')}}</div></a></li>
 
-            <li class="menu-item"><a class="menu-link" href="@if(app()->getLocale() == 'ar')
-                {{route('blog',1)}}
-                @else
-                {{route('blog',2)}}
-                @endif"><div>
-                        @if(app()->getLocale() == 'ar')
-                            {{\App\Models\Blog::find(1)->title}}
-                        @else
-                            {{\App\Models\Blog::find(2)->title}}
-                        @endif
-                    </div></a></li>
+{{--            <li class="menu-item"><a class="menu-link" href="@if(app()->getLocale() == 'ar')--}}
+{{--                {{route('blog',1)}}--}}
+{{--                @else--}}
+{{--                {{route('blog',2)}}--}}
+{{--                @endif"><div>--}}
+{{--                        @if(app()->getLocale() == 'ar')--}}
+{{--                            {{\App\Models\Blog::find(1)->title}}--}}
+{{--                        @else--}}
+{{--                            {{\App\Models\Blog::find(2)->title}}--}}
+{{--                        @endif--}}
+{{--                    </div></a></li>--}}
 
         <li class="menu-item"><a class="menu-link" target="_blank" href="https://wa.me/{{option('whatsapp')}}"><div>{{__('Contact')}}</div></a></li>
         @else

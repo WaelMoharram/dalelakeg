@@ -51,7 +51,7 @@
                         <div class="container">
                             <div class="row col-mb-30 align-content-stretch">
                             @foreach($services as $blog)
-                                <div class="col-lg-3 col-md-3 ">
+                                <div class="col-lg-4 col-md-6 ">
                                     <a href="{{route('service',$blog->id)}}" class="card h-shadow h-translate-y-sm all-ts">
                                         <div class="card-body p-5">
                                             <div class="feature-box flex-column">

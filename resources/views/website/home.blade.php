@@ -53,7 +53,7 @@
                 </div>
                 <div class="row justify-content-between align-items-center">
 
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-6">
                         @foreach(\App\Models\Service::where('type','service')->orderBy('order_number')->skip(3)->take(3)->get() as $service)
                         <div class="feature-box mt-5 flex-md-row-reverse text-md-end border-0">
                             <div class="fbox-icon">
@@ -68,11 +68,11 @@
 
 
                     </div>
-                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
-                        <img src="{{asset('assets/website')}}/demos/seo/images/sections/2.jpeg" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
-                    </div>
+{{--                    <div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">--}}
+{{--                        <img src="{{asset('assets/website')}}/demos/seo/images/sections/2.jpeg" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">--}}
+{{--                    </div>--}}
 
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-6 col-sm-6">
                         @foreach(\App\Models\Service::where('type','service')->orderBy('order_number')->take(3)->get() as $service)
                             <div class="feature-box mt-5 ">
                                 <div class="fbox-icon">

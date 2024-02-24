@@ -36,7 +36,7 @@ Route::name('dashboard.')->middleware(['language', 'auth:web'])->prefix('dashboa
     Route::resource('works', 'WorkController');
     Route::resource('clients', 'ClientController');
     Route::resource('members', 'MemberController');
-    Route::resource('member_services', 'MemberServiceController');
+    Route::resource('member-services', 'MemberServiceController');
 
 
     Route::resource('contact-us', 'ContactUsController');

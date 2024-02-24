@@ -7,7 +7,7 @@
         <th scope="col">{{__('Options')}}</th>
     </thead>
     <tbody>
-    @foreach($members as $member)
+    @foreach($memberServices as $memberService)
         @include('dashboard.members.partials._table_raw')
     @endforeach
     </tbody>

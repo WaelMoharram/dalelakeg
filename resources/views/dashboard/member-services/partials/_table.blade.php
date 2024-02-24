@@ -2,7 +2,6 @@
     <thead>
     <tr>
         <th scope="col">{{__('#') }}</th>
-        <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Name')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </thead>
@@ -14,7 +13,6 @@
     <tfoot>
     <tr>
         <th scope="col">{{__('#') }}</th>
-        <th scope="col">{{__('Image')}}</th>
         <th scope="col">{{__('Name')}}</th>
         <th scope="col">{{__('Options')}}</th>
     </tr>

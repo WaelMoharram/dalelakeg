@@ -43,7 +43,34 @@
 
                     {!! $service->long_description !!}
                 </div>
+                <div class="col-md-12">
+                    <div class="section bg-transparent">
+                        <div class="container">
+                            <div class="row col-mb-30 align-content-stretch">
+                                @foreach(\App\Models\Member::where('service_id',$service->id)->get as $blog)
+                                    <div class="col-lg-4 col-md-6 ">
+                                        <a href="{{route('service',$blog->id)}}" class="card h-shadow h-translate-y-sm all-ts">
+                                            <div class="card-body p-5">
+                                                <div class="feature-box flex-column">
+                                                    <div class="fbox-image mb-5 text-center">
+                                                        <img height="150" src="{{url($blog->image)}}" alt="Feature Icon">
+                                                    </div>
+                                                    <div class="fbox-content">
+                                                        <h3 class="nott ls0 text-larger">{{$blog->title}}</h3>
+                                                        <p class="text-smaller">{{$blog->description}}</p>
+                                                    </div>
 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                @endforeach
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div><!-- .postcontent end -->
         </div>
 

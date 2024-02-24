@@ -17,39 +17,41 @@
     {{input_error($errors,'image')}}
 </div>
 
-<div class="form-group py-1 col-md-6">
-    <label for="name-ar"> {{__('Name in Arabic')}}</label>
-    {!! Form::text('name[ar]',null,['id'=>'name-ar','class'=>'form-control col','placeholder'=>__("Name in Arabic")]) !!}
-    {{input_error($errors,'name.ar')}}
-</div>
 
 <div class="form-group py-1 col-md-6">
-    <label for="name-en"> {{__('Name in English')}}</label>
-    {!! Form::text('name[en]',null,['id'=>'name-en','class'=>'form-control col','placeholder'=>__("Name in English")]) !!}
-    {{input_error($errors,'name.en')}}
-</div>
-<div class="form-group py-1 col-md-6">
     <label for="title-ar"> {{__('Title in Arabic')}}</label>
-    {!! Form::text('title[ar]',null,['id'=>'title-ar','class'=>'form-control col','placeholder'=>__("Title in Arabic")]) !!}
+    {!! Form::text('title[ar]',($member ? $member->getTranslation('title', 'ar') : null),['id'=>'title-ar','class'=>'form-control col','placeholder'=>__("Title in Arabic")]) !!}
     {{input_error($errors,'title.ar')}}
 </div>
 
 <div class="form-group py-1 col-md-6">
     <label for="title-en"> {{__('Title in English')}}</label>
-    {!! Form::text('title[en]',null,['id'=>'title-en','class'=>'form-control col','placeholder'=>__("Title in English")]) !!}
+    {!! Form::text('title[en]',($member ? $member->getTranslation('title', 'en') : null),['id'=>'title-en','class'=>'form-control col','placeholder'=>__("Title in English")]) !!}
     {{input_error($errors,'title.en')}}
 </div>
 
 <div class="form-group py-1 col-md-6">
     <label for="description-ar"> {{__('Description in Arabic')}}</label>
-    {!! Form::textarea('description[ar]',null,['id'=>'description-ar','class'=>'form-control col','placeholder'=>__("Description in Arabic")]) !!}
+    {!! Form::textarea('description[ar]',($member ? $member->getTranslation('description', 'ar') : null),['id'=>'description-ar','class'=>'form-control col','placeholder'=>__("Description in Arabic")]) !!}
     {{input_error($errors,'description.ar')}}
 </div>
 
 <div class="form-group py-1 col-md-6">
     <label for="description-en"> {{__('Description in English')}}</label>
-    {!! Form::textarea('description[en]',null,['id'=>'description-en','class'=>'form-control col','placeholder'=>__("Description in English")]) !!}
+    {!! Form::textarea('description[en]',($member ? $member->getTranslation('description', 'en') : null),['id'=>'description-en','class'=>'form-control col','placeholder'=>__("Description in English")]) !!}
     {{input_error($errors,'description.en')}}
+</div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="address-ar"> {{__('Address in Arabic')}}</label>
+    {!! Form::textarea('address[ar]',($member ? $member->getTranslation('address', 'ar') : null),['id'=>'address-ar','class'=>'form-control col','placeholder'=>__("Address in Arabic")]) !!}
+    {{input_error($errors,'address.ar')}}
+</div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="address-en"> {{__('Address in English')}}</label>
+    {!! Form::textarea('address[en]',($member ? $member->getTranslation('address', 'en') : null),['id'=>'address-en','class'=>'form-control col','placeholder'=>__("Address in English")]) !!}
+    {{input_error($errors,'address.en')}}
 </div>
 
 

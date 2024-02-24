@@ -65,7 +65,7 @@
                     <div class="section bg-transparent">
                         <div class="container">
                             <div class="row col-mb-30 align-content-stretch">
-                                <table class="table table-striped table-bordered table-hover">
+                                <table dir="rtl" class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>

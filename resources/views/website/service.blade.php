@@ -53,7 +53,7 @@
                                             <div class="card-body p-5">
                                                 <div class="feature-box flex-column">
                                                     <div class="fbox-image mb-5 text-center">
-                                                        <img height="150" src="{{url($blog->image)}}" alt="Feature Icon">
+{{--                                                        <img height="150" src="{{url($blog->image ?? '#')}}" alt="Feature Icon">--}}
                                                     </div>
                                                     <div class="fbox-content">
                                                         <h3 class="nott ls0 text-larger">{{$blog->title}}</h3>

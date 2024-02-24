@@ -17,7 +17,7 @@ class MemberService extends Model
 
     protected $dates = ['deleted_at'];
     protected $guarded = array('id');
-    public $translatable = ['title','description','duration'];
+    public $translatable = ['title','description'];
 
 
 }

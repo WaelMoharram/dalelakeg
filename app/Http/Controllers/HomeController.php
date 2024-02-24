@@ -11,6 +11,8 @@ use App\Models\Contact;
 
 use App\Models\FAQs;
 use App\Models\Image;
+use App\Models\Member;
+use App\Models\MemberService;
 use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Task;
@@ -105,6 +107,14 @@ class HomeController extends Controller
         $images = Image::OrderByDesc('id')->paginate(9);
         return view('website.images',compact('images'));
 
+    }
+
+    public function member(Request $request)
+    {
+        $member = Member::find($request->member_id);
+        $services = MemberService::wheere('member_id', $request->member_id)->get();
+
+        return view('website.member',compact('member','services'));
     }
 
 

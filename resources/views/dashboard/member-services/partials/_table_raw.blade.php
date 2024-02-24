@@ -7,16 +7,16 @@
 
             <div class="btn-group" role="group">
                 @component('dashboard.layouts.partials.buttons._edit_button',[
-                        'route' => route('dashboard.members.edit',$memberService->id),
-                        'tooltip' => __('Edit members'),
+                        'route' => route('dashboard.member-services.edit',$memberService->id),
+                        'tooltip' => __('Edit member-services'),
                          ])
                 @endcomponent
             </div>
             <div class="btn-group" role="group">
                 @component('dashboard.layouts.partials.buttons._delete_button',[
                             'id'=>$memberService->id,
-                            'route' => route('dashboard.members.destroy',$memberService->id) ,
-                            'tooltip' => __('Delete members'),
+                            'route' => route('dashboard.member-services.destroy',$memberService->id) ,
+                            'tooltip' => __('Delete member-services'),
                              ])
                 @endcomponent
             </div>

@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 
 use App\Http\Requests\MemberRequest;
 use App\Models\Member;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class MemberController extends Controller
@@ -26,10 +27,10 @@ class MemberController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
 
-        $members = Member::all();
+        $members = Member::where('service_id',$request->service_id)->get();;
 
         return view('dashboard.members.index', compact('members'));
     }
@@ -64,7 +65,7 @@ class MemberController extends Controller
         $member = Member::create($requests);
 
         toast(__('Added successfully'),'success');
-        return redirect(route('dashboard.members.index'));
+        return redirect(route('dashboard.members.index',['service_id',$request->service_id]));
     }
 
     /**
@@ -114,7 +115,7 @@ class MemberController extends Controller
         $member = Member::findOrFail($id);
         $member->fill($requests)->save();
         toast(__('Edited successfully'),'success');
-        return redirect(route('dashboard.members.index'));
+        return redirect(route('dashboard.members.index',['service_id',$request->service_id]));
     }
 
     /**

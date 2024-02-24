@@ -6,6 +6,13 @@
     <td>
 
         <div class="btn-group" role="group" aria-label="Vertical button group">
+            <div class="btn-group" role="group">
+
+            <a href="{{route('dashboard.members.index',['service_id',$service->id])}}" data-toggle="tooltip" data-placement="top" title="{{$tooltip}}"
+               class="btn btn-md btn-info">
+                <i class="fa fa-plus"></i> الاعضاء @endif
+            </a>
+            </div>
 
             <div class="btn-group" role="group">
                 @component('dashboard.layouts.partials.buttons._edit_button',[

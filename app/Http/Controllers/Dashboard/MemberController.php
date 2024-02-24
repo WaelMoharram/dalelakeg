@@ -65,7 +65,7 @@ class MemberController extends Controller
         $member = Member::create($requests);
 
         toast(__('Added successfully'),'success');
-        return redirect(route('dashboard.members.index',['service_id',$request->service_id]));
+        return redirect(route('dashboard.members.index',['service_id'=>$request->service_id]));
     }
 
     /**
@@ -115,7 +115,7 @@ class MemberController extends Controller
         $member = Member::findOrFail($id);
         $member->fill($requests)->save();
         toast(__('Edited successfully'),'success');
-        return redirect(route('dashboard.members.index',['service_id',$request->service_id]));
+        return redirect(route('dashboard.members.index',['service_id'=>$request->service_id]));
     }
 
     /**

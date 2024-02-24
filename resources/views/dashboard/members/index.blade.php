@@ -5,7 +5,7 @@
         @include('dashboard.layouts.partials._breadcrumb',['level'=>'members'])
 @endsection
 @section('btn')
-        @include('dashboard.layouts.partials._add_icon',['route'=>'members'])
+    <a href="{{route('dashboard.members.create',['service_id'=>request()->service_id])}}" class="btn-icon btn btn-primary btn-round btn-sm" ><i class="feather icon-plus"></i> اضافة جديد}</a>
 @endsection
 @section('content')
     <section id="column-selectors">

@@ -7,7 +7,7 @@
     </thead>
     <tbody>
     @foreach($memberServices as $memberService)
-        @include('dashboard.members.partials._table_raw')
+        @include('dashboard.member-services.partials._table_raw')
     @endforeach
     </tbody>
     <tfoot>

@@ -55,9 +55,10 @@
                 ============================================= -->
 {{--                <div class="col-lg-10">--}}
 
-
+<br>
 
                 {!! $member->description !!}
+                <br>
                 {!! $member->address !!}
                 </div>
                 <div class="col-md-12">

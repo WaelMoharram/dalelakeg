@@ -41,6 +41,7 @@ Route::middleware(['language'])->group(function () {
     Route::get('/service/{id}', [HomeController::class, 'service'])->name('service');
 
     Route::get('/images', [HomeController::class, 'images'])->name('images');
+    Route::get('/member', [HomeController::class, 'member'])->name('member');
 
 
 });

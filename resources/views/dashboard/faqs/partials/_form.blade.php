@@ -26,26 +26,26 @@
 
 <div class="form-group py-1 col-md-6">
     <label for="question-ar"> {{__('Question in Arabic')}}</label>
-    {!! Form::text('question[ar]',($faq ? $gaq->getTranslation('question', 'ar') : null),['id'=>'question-ar','class'=>'form-control col','placeholder'=>__("Question in Arabic")]) !!}
+    {!! Form::text('question[ar]',($faq ? $faq->getTranslation('question', 'ar') : null),['id'=>'question-ar','class'=>'form-control col','placeholder'=>__("Question in Arabic")]) !!}
     {{input_error($errors,'question.ar')}}
 </div>
 
 <div class="form-group py-1 col-md-6">
     <label for="question-en"> {{__('Question in English')}}</label>
-    {!! Form::text('question[en]',($faq ? $gaq->getTranslation('question', 'en') : null),['id'=>'question-en','class'=>'form-control col','placeholder'=>__("Question in English")]) !!}
+    {!! Form::text('question[en]',($faq ? $faq->getTranslation('question', 'en') : null),['id'=>'question-en','class'=>'form-control col','placeholder'=>__("Question in English")]) !!}
     {{input_error($errors,'question.en')}}
 </div>
 
 
 <div class="form-group py-1 col-md-6">
     <label for="answer-ar"> {{__('Answer in Arabic')}} </label>
-    {!! Form::textarea('answer[ar]',($faq ? $gaq->getTranslation('answer', 'ar') : null),['id'=>'answer-ar','class'=>'form-control col']) !!}
+    {!! Form::textarea('answer[ar]',($faq ? $faq->getTranslation('answer', 'ar') : null),['id'=>'answer-ar','class'=>'form-control col']) !!}
     {{input_error($errors,'answer.ar')}}
 </div>
 
 <div class="form-group py-1 col-md-6">
     <label for="answer-en"> {{__('Answer in English')}} </label>
-    {!! Form::textarea('answer[en]',($faq ? $gaq->getTranslation('question', 'en') : null),['id'=>'answer-en','class'=>'form-control col']) !!}
+    {!! Form::textarea('answer[en]',($faq ? $faq->getTranslation('question', 'en') : null),['id'=>'answer-en','class'=>'form-control col']) !!}
     {{input_error($errors,'answer.en')}}
 </div>
 

@@ -1,7 +1,13 @@
 @extends('website.app')
 @section('title'){!! $service->name !!}@endsection
 @section('header')@endsection
-
+<style>
+    .content-wrap {
+        position: relative;
+        padding: 0px 0 !important;
+        overflow: hidden;
+    }
+</style>
 
 @section('content')
 <!-- Slider
@@ -37,7 +43,7 @@
 
                 <!-- Post Content
                 ============================================= -->
-                <div class="col-lg-10">
+{{--                <div class="col-lg-10">--}}
 
 
 

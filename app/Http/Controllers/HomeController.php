@@ -112,7 +112,7 @@ class HomeController extends Controller
     public function member(Request $request)
     {
         $member = Member::find($request->member_id);
-        $services = MemberService::wheere('member_id', $request->member_id)->get();
+        $services = MemberService::where('member_id', $request->member_id)->get();
 
         return view('website.member',compact('member','services'));
     }

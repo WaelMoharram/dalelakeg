@@ -65,7 +65,7 @@ class MemberServiceController extends Controller
         $memberService = MemberService::create($requests);
 
         toast(__('Added successfully'),'success');
-        return redirect(route('dashboard.member-services.index',['service_id'=>$request->service_id]));
+        return redirect(route('dashboard.member-services.index',['member_id'=>$request->member_id]));
     }
 
     /**
@@ -115,7 +115,7 @@ class MemberServiceController extends Controller
         $memberService = MemberService::findOrFail($id);
         $memberService->fill($requests)->save();
         toast(__('Edited successfully'),'success');
-        return redirect(route('dashboard.member-services.index',['service_id'=>$request->service_id]));
+        return redirect(route('dashboard.member-services.index',['member_id'=>$request->member_id]));
     }
 
     /**

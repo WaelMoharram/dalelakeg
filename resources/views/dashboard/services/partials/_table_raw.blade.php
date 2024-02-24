@@ -10,7 +10,7 @@
 
             <a href="{{route('dashboard.members.index',['service_id',$service->id])}}" data-toggle="tooltip" data-placement="top" title="{{$tooltip}}"
                class="btn btn-md btn-info">
-                <i class="fa fa-plus"></i> الاعضاء @endif
+                <i class="fa fa-plus"></i> الاعضاء
             </a>
             </div>
 

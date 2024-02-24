@@ -53,7 +53,12 @@
                                             <div class="card-body p-5">
                                                 <div class="feature-box flex-column">
                                                     <div class="fbox-image mb-5 text-center">
-{{--                                                        <img height="150" src="{{url($blog->image ?? '#')}}" alt="Feature Icon">--}}
+                                                        @if($blog->image)
+                                                        <img height="150" src="{{url($blog->image ?? '#')}}" alt="Feature Icon">
+                                                        @else
+                                                            <img height="150" src="{{asset('assets/website')}}/images/logo@2x.png" alt="Feature Icon">
+
+                                                        @endif
                                                     </div>
                                                     <div class="fbox-content">
                                                         <h3 class="nott ls0 text-larger">{{$blog->title}}</h3>

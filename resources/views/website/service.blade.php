@@ -7,6 +7,16 @@
         padding: 0px 0 !important;
         overflow: hidden;
     }
+    .section {
+        position: relative;
+        width: 100%;
+        margin: 60px 0;
+        padding: 0px 0!important;
+        background-color: #F9F9F9;
+        overflow: hidden;
+    }
+
+
 </style>
 
 @section('content')

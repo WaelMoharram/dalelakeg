@@ -2,6 +2,7 @@
     <td>{!! $loop->index +1 !!}</td>
 {{--    <td><img src="{!! url('/').'/'.$member->image !!}" style="width: 100px; height: 100px;"></td>--}}
     <td>{!! $memberService->title !!}</td>
+    <td>{!! $memberService->description !!}</td>
     <td>
         <div class="btn-group" role="group" aria-label="Vertical button group">
 

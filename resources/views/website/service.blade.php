@@ -25,13 +25,13 @@
 
         <div class="container bottommargin">
             <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8 text-center">
-                    <div class="heading-block border-bottom-0 center mx-auto">
+{{--                <div class="col-xl-6 col-lg-8 text-center">--}}
+{{--                    <div class="heading-block border-bottom-0 center mx-auto">--}}
 
 {{--                        <h3 class="nott ls0 mb-3">{!! $service->name !!}</h3>--}}
 
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
 
                 <div class="clear"></div>
 

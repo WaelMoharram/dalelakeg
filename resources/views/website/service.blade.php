@@ -49,7 +49,7 @@
                             <div class="row col-mb-30 align-content-stretch">
                                 @foreach(\App\Models\Member::where('service_id',$service->id)->get() as $blog)
                                     <div class="col-lg-4 col-md-6 ">
-                                        <a href="{{route('service',$blog->id)}}" class="card h-shadow h-translate-y-sm all-ts">
+                                        <a href="{{route('member',$blog->id)}}" class="card h-shadow h-translate-y-sm all-ts">
                                             <div class="card-body p-5">
                                                 <div class="feature-box flex-column">
                                                     <div class="fbox-image mb-5 text-center">

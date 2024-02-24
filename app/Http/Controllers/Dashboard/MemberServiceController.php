@@ -30,7 +30,7 @@ class MemberServiceController extends Controller
     public function index(Request $request)
     {
 
-        $memberServices = MemberService::where('service_id',$request->service_id)->get();;
+        $memberServices = MemberService::where('member_id',$request->member_id)->get();;
 
         return view('dashboard.member-services.index', compact('memberServices'));
     }

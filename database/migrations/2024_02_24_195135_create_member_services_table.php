@@ -19,6 +19,7 @@ class CreateMemberServicesTable extends Migration
             $table->softDeletes();
             $table->text('title');
             $table->text('description');
+            $table->integer('duration');
             $table->unsignedBigInteger('member_id');
 
         });

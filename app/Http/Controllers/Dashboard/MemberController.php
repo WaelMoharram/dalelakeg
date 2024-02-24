@@ -52,7 +52,7 @@ class MemberController extends Controller
      *
      * @return Response
      */
-    public function store(MemberRequest $request)
+    public function store(Request $request)
     {
 
         $requests = $request->all();
@@ -102,7 +102,7 @@ class MemberController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update($id, MemberRequest $request)
+    public function update($id, Request $request)
     {
 
         $requests=$request->all();

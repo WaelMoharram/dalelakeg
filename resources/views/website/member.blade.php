@@ -15,6 +15,9 @@
         background-color: #F9F9F9;
         overflow: hidden;
     }
+    p{
+        margin-bottom: 0;
+    }
 
 
 </style>

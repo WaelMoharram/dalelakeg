@@ -71,7 +71,7 @@
                     </div>
                     <div class="col-md-2">
                         <a href="https://wa.me/2{!! $member->phone !!} ">
-                            <i class="icon-call"></i> {!! $member->phone !!}
+                             {!! $member->phone !!} <i class="icon-call"></i>
                         </a>
 
                     </div>
@@ -128,7 +128,7 @@
                 </div>
                 <div class="col-md-2">
                     <a href="https://wa.me/2{!! $member->phone !!} ">
-                        <i class="icon-call"></i> {!! $member->phone !!}
+                         {!! $member->phone !!} <i class="icon-call"></i>
                     </a>
 
                 </div>

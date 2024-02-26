@@ -66,10 +66,10 @@
                     <div class="col-md-3">
                         {!! $member->description !!}
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         {!! $member->address !!}
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         {!! $member->title !!}
                     </div>
 

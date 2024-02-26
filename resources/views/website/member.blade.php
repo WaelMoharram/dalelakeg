@@ -81,7 +81,7 @@
                                     @foreach($services as $service)
                                         <tr>
                                             <th scope="row">{{$loop->iteration}}</th>
-                                            <td>{{$service->title}}</td>
+                                            <td><p>{{$service->title}}</p></td>
                                             <td>{!!$service->description !!}</td>
                                             <td>{{$service->duration}}</td>
                                         </tr>

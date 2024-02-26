@@ -79,7 +79,7 @@
                                         <tr>
                                             <th scope="row">{{$loop->iteration}}</th>
                                             <td>{{$service->title}}</td>
-                                            <td>{{$service->description}}</td>
+                                            <td>{!!$service->description !!}</td>
                                             <td>{{$service->duration}}</td>
                                         </tr>
                                     @endforeach

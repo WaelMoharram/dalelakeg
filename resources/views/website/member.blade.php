@@ -67,7 +67,7 @@
                             <div class="row col-mb-30 align-content-stretch">
                                 <table dir="rtl" class="table table-striped table-bordered table-hover">
                                     <thead>
-                                        <tr>
+                                        <tr style="color: red;">
                                             <th scope="col">#</th>
                                             <th scope="col">{{__('الجهات الحكومية')}}</th>
                                             <th scope="col">{{__('نوع الخدمة')}}</th>

@@ -53,6 +53,12 @@
     {!! Form::textarea('address[en]',($member ? $member->getTranslation('address', 'en') : null),['id'=>'address-en','class'=>'form-control col','placeholder'=>__("Address in English")]) !!}
     {{input_error($errors,'address.en')}}
 </div>
+
+<div class="form-group py-1 col-md-6">
+    <label for="phone"> {{__('Phone')}}</label>
+    {!! Form::text('phone',null,['id'=>'phone','class'=>'form-control col','placeholder'=>__("Phone")]) !!}
+    {{input_error($errors,'phone')}}
+</div>
 <input type="hidden" name="service_id" value="{{$member->service_id ?? request()->service_id}}">
 
 @section('footer')

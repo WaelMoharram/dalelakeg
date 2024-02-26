@@ -59,10 +59,22 @@
 {{--                <div class="col-lg-10">--}}
 
 <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        {!! $member->title !!}
+                    </div>
+                    <div class="col-md-3">
+                        {!! $member->description !!}
+                    </div>
+                    <div class="col-md-3">
+                        {!! $member->address !!}
+                    </div>
+                    <div class="col-md-3">
+                        {!! $member->title !!}
+                    </div>
 
-                {!! $member->description !!}
-                <br>
-                {!! $member->address !!}
+                </div>
+
                 </div>
                 <div class="col-md-12">
                     <div class="section bg-transparent">

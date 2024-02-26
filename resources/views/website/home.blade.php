@@ -96,42 +96,42 @@
 
         <!-- Works/Projects
         ============================================= -->
-        <div class="section m-0" style="background: url('{{asset('assets/website')}}/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">
-            <div class="container">
-                <div class="heading-block border-bottom-0 center">
-                    <div class="badge rounded-pill badge-default">{{__('Completed Projects')}}</div>
-                    <h3 class="nott ls0">{{__('Our Latest Works')}}</h3>
-                </div>
+{{--        <div class="section m-0" style="background: url('{{asset('assets/website')}}/demos/seo/images/sections/5.jpg') no-repeat center center; background-size: cover;padding: 80px 0;">--}}
+{{--            <div class="container">--}}
+{{--                <div class="heading-block border-bottom-0 center">--}}
+{{--                    <div class="badge rounded-pill badge-default">{{__('Completed Projects')}}</div>--}}
+{{--                    <h3 class="nott ls0">{{__('Our Latest Works')}}</h3>--}}
+{{--                </div>--}}
 
-                <div id="portfolio" class="portfolio row grid-container gutter-20">
-                    @foreach(\App\Models\Service::where('type','work')->orderBy('order_number')->get()->take(6) as $work)
-                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
-                        <div class="grid-inner">
-                            <div class="portfolio-image">
-                                <img src="{{url($work->image)}}" alt="{{$work->name}}">
-                                <div class="bg-overlay">
-                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">
-                                        <a href="{{route('service',$work->id)}}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>
-                                    </div>
-                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="{{route('service',$work->id)}}">{{$work->name}}</a></h3>
-                                <span>{{$work->description}}</span>
-                            </div>
-                        </div>
-                    </article>
-@endforeach
+{{--                <div id="portfolio" class="portfolio row grid-container gutter-20">--}}
+{{--                    @foreach(\App\Models\Service::where('type','work')->orderBy('order_number')->get()->take(6) as $work)--}}
+{{--                    <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">--}}
+{{--                        <div class="grid-inner">--}}
+{{--                            <div class="portfolio-image">--}}
+{{--                                <img src="{{url($work->image)}}" alt="{{$work->name}}">--}}
+{{--                                <div class="bg-overlay">--}}
+{{--                                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-speed="500">--}}
+{{--                                        <a href="{{route('service',$work->id)}}" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeIn" data-hover-speed="500"><i class="icon-line-ellipsis"></i></a>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-speed="500"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="portfolio-desc">--}}
+{{--                                <h3><a href="{{route('service',$work->id)}}">{{$work->name}}</a></h3>--}}
+{{--                                <span>{{$work->description}}</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </article>--}}
+{{--@endforeach--}}
 
-                </div>
+{{--                </div>--}}
 
-                <div class="center">
-                    <a href="{{route('works')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">{{__('View All Works')}}</a>
-                </div>
+{{--                <div class="center">--}}
+{{--                    <a href="{{route('works')}}" class="button button-large button-rounded text-capitalize ms-0 mt-5 ls0">{{__('View All Works')}}</a>--}}
+{{--                </div>--}}
 
-            </div>
-        </div>
+{{--            </div>--}}
+{{--        </div>--}}
 
 
 

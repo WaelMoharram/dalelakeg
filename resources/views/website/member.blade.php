@@ -69,7 +69,8 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th colspan="2" scope="col">{{__('Name')}}</th>
+                                            <th scope="col">{{__('الجهات الحكومية')}}</th>
+                                            <th scope="col">{{__('نوع الخدمة')}}</th>
                                             <th scope="col">{{__('Duration')}}</th>
                                         </tr>
                                     </thead>

@@ -59,7 +59,7 @@
 {{--                <div class="col-lg-10">--}}
 
 <br>
-                <div class="row">
+                <div dir="rtl" class="row">
                     <div class="col-md-3">
                         {!! $member->title !!}
                     </div>

@@ -67,7 +67,7 @@
                         {!! $member->description !!}
                     </div>
                     <div class="col-md-3">
-                        <i class="icon-envelope-alt">  {!! $member->address !!}
+                        <i class="icon-envelope-alt"></i>  {!! $member->address !!}
                     </div>
                     <div class="col-md-2">
                         <a href="https://wa.me/2{!! $member->phone !!} ">
@@ -124,7 +124,7 @@
                     {!! $member->description !!}
                 </div>
                 <div class="col-md-3">
-                    <i class="icon-envelope-alt"> {!! $member->address !!}
+                    <i class="icon-envelope-alt"></i> {!! $member->address !!}
                 </div>
                 <div class="col-md-2">
                     <a href="https://wa.me/2{!! $member->phone !!} ">

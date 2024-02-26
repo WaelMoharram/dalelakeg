@@ -83,6 +83,12 @@
                                             <td>{{$service->duration}}</td>
                                         </tr>
                                     @endforeach
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                     </tbody>
                                 </table>
 

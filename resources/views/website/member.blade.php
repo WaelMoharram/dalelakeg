@@ -70,7 +70,7 @@
                         {!! $member->address !!}
                     </div>
                     <div class="col-md-2">
-                        {!! $member->title !!}
+                        {!! $member->phone !!}
                     </div>
 
                 </div>

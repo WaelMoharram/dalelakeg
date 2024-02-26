@@ -67,11 +67,11 @@
                         {!! $member->description !!}
                     </div>
                     <div class="col-md-3">
-                        {!! $member->address !!}
+                        <i class="icon-envelope-alt">  {!! $member->address !!}
                     </div>
                     <div class="col-md-2">
                         <a href="https://wa.me/2{!! $member->phone !!} ">
-                             {!! $member->phone !!} <i class="icon-call"></i>
+                            <i class="icon-call"></i> {!! $member->phone !!}
                         </a>
 
                     </div>
@@ -124,11 +124,11 @@
                     {!! $member->description !!}
                 </div>
                 <div class="col-md-3">
-                    {!! $member->address !!}
+                    <i class="icon-envelope-alt"> {!! $member->address !!}
                 </div>
                 <div class="col-md-2">
                     <a href="https://wa.me/2{!! $member->phone !!} ">
-                         {!! $member->phone !!} <i class="icon-call"></i>
+                        <i class="icon-call"></i>  {!! $member->phone !!}
                     </a>
 
                 </div>

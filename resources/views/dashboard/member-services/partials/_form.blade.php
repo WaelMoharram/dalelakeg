@@ -39,10 +39,10 @@
 
 @section('footer')
 
-    <script>
-        CKEDITOR.replace( 'description-ar' );
-        CKEDITOR.replace( 'description-en' );
-    </script>
+{{--    <script>--}}
+{{--        CKEDITOR.replace( 'description-ar' );--}}
+{{--        CKEDITOR.replace( 'description-en' );--}}
+{{--    </script>--}}
 
     <script>
         console.log('out')

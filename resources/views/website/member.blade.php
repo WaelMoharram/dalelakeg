@@ -116,7 +116,26 @@
                     </div>
 
                 </div>
-            </div><!-- .postcontent end -->
+            <div dir="rtl" class="row">
+                <div class="col-md-3">
+                    {!! $member->title !!}
+                </div>
+                <div class="col-md-4">
+                    {!! $member->description !!}
+                </div>
+                <div class="col-md-3">
+                    {!! $member->address !!}
+                </div>
+                <div class="col-md-2">
+                    <a href="https://wa.me/2{!! $member->phone !!} ">
+                        {!! $member->phone !!}
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div><!-- .postcontent end -->
         </div>
 
         <div class="clear"></div>

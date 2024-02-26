@@ -70,7 +70,10 @@
                         {!! $member->address !!}
                     </div>
                     <div class="col-md-2">
-                        {!! $member->phone !!}
+                        <a href="https://wa.me/2{!! $member->phone !!} ">
+                            {!! $member->phone !!}
+                        </a>
+
                     </div>
 
                 </div>
